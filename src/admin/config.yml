@@ -35,6 +35,7 @@ collections:
           - { name: territory, label: Territory line }
           - { name: instagram, label: Instagram URL }
           - { name: substack, label: Substack URL }
+          - { name: substackName, label: Substack name }
           - { name: calendly, label: "Calendly link (paste to enable online booking)", required: false }
           - { name: url, label: Site URL }
           - { name: setupMode, label: Setup mode (noindex), widget: boolean }
@@ -43,7 +44,7 @@ collections:
         file: src/_data/trusted.json
         fields:
           - { name: line, label: Line }
-          - { name: items, label: Names (employers, teams, firms), widget: list, field: { name: item, label: Name } }
+          - { name: items, label: Logos (upload a logo, or type a name to show text instead), widget: list, fields: [ { name: name, label: Name (used as alt text; type "Logo here" for a placeholder box) }, { name: logo, label: Logo image (PNG or SVG, transparent background), widget: image, required: false } ] }
       - name: partners
         label: Partners and sponsors
         file: src/_data/partners.json
@@ -55,3 +56,46 @@ collections:
         fields:
           - { name: intro, label: Intro }
           - { name: follows, label: Accounts, widget: list, fields: [ { name: name, label: Name }, { name: handle, label: Instagram handle (no @) }, { name: url, label: URL }, { name: note, label: Why, widget: text } ] }
+      - name: copy
+        label: Homepage and footer text
+        file: src/_data/copy.json
+        fields:
+          - name: hero
+            label: Homepage hero
+            widget: object
+            fields:
+              - { name: title, label: Headline }
+              - { name: lede, label: Intro paragraph, widget: text }
+              - { name: primary, label: Main button text }
+              - { name: secondary, label: Second button text }
+          - name: cta
+            label: Bottom "Ready when you are" band (every page)
+            widget: object
+            fields:
+              - { name: kicker, label: Small line above the headline }
+              - { name: title, label: Headline }
+              - { name: lede, label: Paragraph, widget: text }
+          - name: newsletter
+            label: Homepage newsletter section
+            widget: object
+            fields:
+              - { name: kicker, label: Small line above the heading }
+              - { name: lede, label: Paragraph, widget: text }
+          - name: footer
+            label: Footer
+            widget: object
+            fields:
+              - { name: tagline, label: Tagline (shown before the city) }
+              - { name: appointment, label: Text after the city (e.g. "by appointment.") }
+              - { name: newsletterHeading, label: Newsletter heading }
+              - { name: newsletterBlurb, label: Newsletter blurb, widget: text }
+      - name: looks
+        label: Lookbook
+        file: src/_data/looks.json
+        fields:
+          - { name: items, label: Looks, widget: list, fields: [ { name: src, label: Photo, widget: image }, { name: alt, label: Alt text (describe the outfit) }, { name: credit, label: Caption }, { name: w, label: Width in pixels, widget: number, required: false }, { name: h, label: Height in pixels, widget: number, required: false } ] }
+      - name: reels
+        label: Reels
+        file: src/_data/reels.json
+        fields:
+          - { name: items, label: Reels, widget: list, fields: [ { name: slug, label: Slug (short, lowercase, hyphens) }, { name: title, label: Title }, { name: note, label: Note, widget: text }, { name: poster, label: Poster image, widget: image }, { name: src, label: Video file path or URL }, { name: placeholder, label: Placeholder (hide until real video is added), widget: boolean, default: false } ] }

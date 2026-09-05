@@ -7,9 +7,9 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
   <div class="wrap hero-grid">
     <div>
       <p class="kicker">Personal styling · {{ site.territory }}</p>
-      <h1>Be inspired by your own wardrobe.</h1>
-      <p class="lede">High street and high fashion can coexist. Halie puts vintage, custom, athletic, and off-the-rack pieces together into looks that express who you already are. For women, men, and children.</p>
-      <div class="actions"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="/services/">How it works</a></div>
+      <h1>{{ copy.hero.title }}</h1>
+      <p class="lede">{{ copy.hero.lede }}</p>
+      <div class="actions"><a class="btn" href="/contact/">{{ copy.hero.primary }}</a><a class="btn ghost" href="/services/">{{ copy.hero.secondary }}</a></div>
     </div>
     <img class="hero-img" src="/images/halie-column-hero.jpg" alt="Halie in a navy blazer and striped tie, seated on a column with an Hermès bag" width="1206" height="1517" fetchpriority="high">
   </div>
@@ -38,7 +38,7 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
     <div class="band-head"><h2>Lookbook</h2><a class="textlink" href="/lookbook/">See all →</a></div>
     <div class="strip">
     {%- set picks = ["/images/green-sweater-close.jpg","/images/houndstooth-valentino.jpg","/images/tosca.jpg","/images/downtown-vintage.jpg","/images/portfolio-throwback.jpg","/images/halie-sunglasses.jpg"] %}
-    {%- for l in looks %}{% if l.src in picks %}
+    {%- for l in looks.items %}{% if l.src in picks %}
       <a href="/lookbook/" title="{{ l.credit }}"><img src="{{ l.src }}" alt="{{ l.alt }}" width="{{ l.w }}" height="{{ l.h }}" loading="lazy"></a>
     {%- endif %}{% endfor %}
     </div>
@@ -76,9 +76,9 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
 <section class="band" id="substack">
   <div class="wrap two-col top">
     <div>
-      <p class="kicker">The newsletter</p>
+      <p class="kicker">{{ copy.newsletter.kicker }}</p>
       <h2>The Urban Edit</h2>
-      <p class="lede">Your go-to for what's next, what's loud, and what's worth wearing.</p>
+      <p class="lede">{{ copy.newsletter.lede }}</p>
       <p>Styling tips, runway commentary, outfit inspiration, and all things fashion, from Halie on Substack.</p>
       {%- if substack.length %}
       <div class="posts">
@@ -95,7 +95,7 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
   <div class="wrap">
     <div class="band-head"><h2>From the feed</h2><a class="textlink" href="{{ site.instagram }}">@urbansophisticatecollective</a></div>
     <div class="reels">
-    {%- for r in reels %}
+    {%- for r in reels.items %}
       <figure>
         <video controls preload="none" poster="{{ r.poster }}" playsinline><source src="{{ r.src }}" type="video/mp4"></video>
         <figcaption><strong>{{ r.title }}</strong><br>{{ r.note }}</figcaption>

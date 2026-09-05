@@ -1,8 +1,14 @@
 {
  "line": "Trusted by professionals at",
  "items": [
-  "Logo here",
-  "Logo here",
-  "Logo here"
+  {
+   "name": "Logo here"
+  },
+  {
+   "name": "Logo here"
+  },
+  {
+   "name": "Logo here"
+  }
  ]
 }

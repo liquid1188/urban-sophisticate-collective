@@ -1,6 +1,6 @@
 <section class="trusted">
   <div class="wrap">
     <p class="label">{{ trusted.line }}</p>
-    <div class="trusted-row">{% for t in trusted.items %}<span{% if t == "Logo here" %} class="placeholder"{% endif %}>{{ t }}</span>{% endfor %}</div>
+    <div class="trusted-row">{% for t in trusted.items %}{% if t.logo %}<img class="trusted-logo" src="{{ t.logo }}" alt="{{ t.name }}" loading="lazy">{% elif t.name == "Logo here" or not t.name %}<span class="placeholder">Logo here</span>{% else %}<span>{{ t.name }}</span>{% endif %}{% endfor %}</div>
   </div>
 </section>

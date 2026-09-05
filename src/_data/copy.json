@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "title": "Be inspired by your own wardrobe.",
+  "lede": "High street and high fashion can coexist. Halie puts vintage, custom, athletic, and off-the-rack pieces together into looks that express who you already are. For women, men, and children.",
+  "primary": "Book a consultation",
+  "secondary": "How it works"
+ },
+ "cta": {
+  "kicker": "Ready when you are",
+  "title": "Be inspired by your own wardrobe.",
+  "lede": "A consultation with Halie is where it starts. Tell her what you're dressing for and what isn't working."
+ },
+ "footer": {
+  "tagline": "Personal styling with a fresh approach.",
+  "appointment": "by appointment.",
+  "newsletterHeading": "Get The Urban Edit",
+  "newsletterBlurb": "What's next, what's loud, and what's worth wearing. Halie's newsletter on Substack."
+ },
+ "newsletter": {
+  "kicker": "The newsletter",
+  "lede": "Your go-to for what's next, what's loud, and what's worth wearing."
+ }
+}

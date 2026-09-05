@@ -41,9 +41,9 @@
 <section class="band dark cta-band">
   <div class="wrap two-col">
     <div>
-      <p class="kicker">Ready when you are</p>
-      <h2>Be inspired by your own wardrobe.</h2>
-      <p class="lede">A consultation with Halie is where it starts. Tell her what you're dressing for and what isn't working.</p>
+      <p class="kicker">{{ copy.cta.kicker }}</p>
+      <h2>{{ copy.cta.title }}</h2>
+      <p class="lede">{{ copy.cta.lede }}</p>
       <div class="actions"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="/services/">How it works</a></div>
     </div>
     <img src="/images/green-sweater-close.jpg" alt="Halie in a green knit with tortoiseshell sunglasses and gold jewelry" width="1206" height="1507" loading="lazy">
@@ -55,7 +55,7 @@
     <div class="fbrand">
       <a href="/" class="foot-logo-link" aria-label="The Urban Sophisticate Collective home"><img class="foot-logo" src="/images/brand/lockup-stacked-dark.svg" alt="The Urban Sophisticate Collective" width="420" height="236" loading="lazy"></a>
       
-      <p class="foot-tag">Personal styling with a fresh approach. {{ site.territory }}, by appointment.</p>
+      <p class="foot-tag">{{ copy.footer.tagline }} {{ site.territory }}, {{ copy.footer.appointment }}</p>
       <div class="foot-ctas"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="/pricing/">Pricing</a></div>
     </div>
     <div class="fcol"><h3>Explore</h3><a href="/services/">Services</a><a href="/events/">Events and photoshoots</a><a href="/clients/">Clients</a><a href="/lookbook/">Lookbook</a><a href="/notes/">Notes</a><a href="/about/">About Halie</a></div><div class="fcol"><h3>The Urban Edit</h3><a href="{{ site.substack }}">Read on Substack</a><a href="/notes/fashion-week/">Fashion week notes</a><a href="/notes/black-to-an-event/">Unpopular opinions</a></div>
@@ -66,7 +66,7 @@
     </div>
   </div>
   <div class="wrap foot-news">
-    <div><p class="foot-brand">Get The Urban Edit</p><p class="foot-tag">What's next, what's loud, and what's worth wearing. Halie's newsletter on Substack.</p></div>
+    <div><p class="foot-brand">{{ copy.footer.newsletterHeading }}</p><p class="foot-tag">{{ copy.footer.newsletterBlurb }}</p></div>
     <form class="news-form" action="{{ site.substack }}/subscribe" method="get" target="_blank"><label class="sr" for="nl-email">Email</label><input id="nl-email" type="email" name="email" placeholder="you@example.com" required><button class="btn" type="submit">Subscribe</button></form>
   </div>
   <div class="wrap foot-bottom">
