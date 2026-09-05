@@ -238,3 +238,5 @@ p { margin: 0 0 1em; max-width: 64ch; }
   .steps > div { padding-top: 1rem; border-top: 1px solid var(--rule); }
 }
 @media (max-width: 520px) { .process { grid-template-columns: 1fr 1fr; } .notes { grid-template-columns: 1fr 1fr; } }
+.site-foot.v2 .util a.totop { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; }
+.site-foot.v2 .util a.totop svg { width: 16px; height: 16px; display: block; }
