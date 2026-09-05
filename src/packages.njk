@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: Packages and pricing
+permalink: /packages/
+description: "How to work with Halie: consultation, color analysis and wardrobe audit, shopping, event and photoshoot styling, and ongoing edits."
+---
+<div class="wrap page-head"><p class="kicker">Ways to work together</p><h1>Packages</h1><p class="lede">{{ packages.intro }}</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap">
+    <div class="packages">
+    {%- for p in packages.packages %}
+      <div class="package">
+        <p class="kicker">{{ p.for }}</p>
+        <h3>{{ p.name }}</h3>
+        <p>{{ p.body }}</p>
+        <p class="price">{% if p.price %}{{ p.price }}{% else %}Ask at your consultation{% endif %}</p>
+      </div>
+    {%- endfor %}
+    </div>
+    <p style="margin-top:2rem;color:var(--ink-2)">{{ packages.note }}</p>
+  </div>
+</section>
+{% include "testimonials.njk" %}

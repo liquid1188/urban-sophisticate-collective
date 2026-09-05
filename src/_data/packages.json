@@ -1,0 +1,36 @@
+{
+ "intro": "Every engagement starts with a consultation. Pricing is shared there, once Halie knows what you're dressing for.",
+ "note": "Prices are set after the consultation and depend on scope. Ask, and Halie will tell you plainly.",
+ "packages": [
+  {
+   "name": "Consultation",
+   "price": "",
+   "for": "Anyone starting out",
+   "body": "A deep dive into your style goals, what's in your closet now, and how Halie can help. You leave with a clear plan and a price for the rest."
+  },
+  {
+   "name": "Color analysis and wardrobe audit",
+   "price": "",
+   "for": "Rebuilding or refreshing a wardrobe",
+   "body": "Your natural undertones and the colors that complement them, then a piece-by-piece audit of what you own. What is working, what can change, what's missing."
+  },
+  {
+   "name": "Shopping",
+   "price": "",
+   "for": "Putting the plan into action",
+   "body": "Curated selections from vintage, high street, athletic, and custom, sourced to your plan and your budget. In person or as a pull sent to you."
+  },
+  {
+   "name": "Event and photoshoot styling",
+   "price": "",
+   "for": "One occasion, done right",
+   "body": "A look for a night out, a wedding, a gala, or a branding shoot. Halie styles the set and the outfit so the photos hold up."
+  },
+  {
+   "name": "Edits and updates",
+   "price": "",
+   "for": "Staying happy with your wardrobe",
+   "body": "Additional edits when needed, seasonal updates, and guidance on mixing and matching, so the wardrobe keeps up with your life."
+  }
+ ]
+}

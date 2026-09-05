@@ -7,6 +7,10 @@ description: "Book a wardrobe consultation with Halie of The Urban Sophisticate 
 <div class="wrap page-head"><h1>Start with a conversation.</h1><p class="lede">Tell Halie what you're dressing for and what isn't working. The consultation narrows your goals and shows how she can help.</p></div>
 <section class="band" style="padding-top:1.5rem">
   <div class="wrap two-col top">
+    {% if site.calendly %}
+    <div class="calendly-inline-widget" data-url="{{ site.calendly }}" style="min-width:320px;height:700px"></div>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    {% else %}
     <form class="form" action="https://formsubmit.co/{{ site.email }}" method="POST">
       <input type="hidden" name="_subject" value="Consultation request from the website">
       <label>Name <input type="text" name="name" required></label>
@@ -17,11 +21,12 @@ description: "Book a wardrobe consultation with Halie of The Urban Sophisticate 
       <label>What are you dressing for? <textarea name="message" rows="5"></textarea></label>
       <button class="btn" type="submit">Send</button>
     </form>
+    {% endif %}
     <div>
       <h3>Or reach out directly</h3>
       <p>Send a message on <a href="{{ site.instagram }}">Instagram</a>, or DM "wardrobe consult" to learn more about our services.</p>
       <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      <p>Cincinnati and Northern Kentucky, and by appointment.</p>
+      <p>{{ site.territory }}, and by appointment.</p>
       <h3 style="margin-top:2rem">What happens next</h3>
       <ol class="next">
         <li><strong>Consultation.</strong> A deep dive into your style goals, and how Halie can help.</li>

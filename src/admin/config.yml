@@ -13,3 +13,29 @@ collections:
         file: src/_data/notes.json
         fields:
           - { name: notes, label: Notes, widget: list, fields: [ { name: slug, label: Slug }, { name: title, label: Title }, { name: kicker, label: Kicker }, { name: image, label: Image, widget: image }, { name: q, label: Question, required: false }, { name: asker, label: Asked by, required: false }, { name: body, label: Body, widget: text } ] }
+      - name: packages
+        label: Packages and pricing
+        file: src/_data/packages.json
+        fields:
+          - { name: intro, label: Intro, widget: text }
+          - { name: note, label: Pricing note, widget: text }
+          - { name: packages, label: Packages, widget: list, fields: [ { name: name, label: Name }, { name: price, label: Price (leave blank to show "Ask"), required: false }, { name: for, label: Who it's for }, { name: body, label: Description, widget: text } ] }
+      - name: testimonials
+        label: Client words
+        file: src/_data/testimonials.json
+        fields:
+          - { name: testimonials, label: Testimonials, widget: list, fields: [ { name: quote, label: Quote, widget: text }, { name: name, label: Name (first name is fine) }, { name: detail, label: Detail (e.g. attorney, Hyde Park), required: false } ] }
+      - name: site
+        label: Site settings
+        file: src/_data/site.json
+        fields:
+          - { name: name, label: Name }
+          - { name: tagline, label: Tagline }
+          - { name: email, label: Email }
+          - { name: territory, label: Territory line }
+          - { name: instagram, label: Instagram URL }
+          - { name: substack, label: Substack URL }
+          - { name: facebook, label: Facebook URL }
+          - { name: calendly, label: "Calendly link (paste to enable online booking)", required: false }
+          - { name: url, label: Site URL }
+          - { name: setupMode, label: Setup mode (noindex), widget: boolean }

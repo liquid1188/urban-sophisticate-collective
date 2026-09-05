@@ -1,0 +1,12 @@
+{% if testimonials.testimonials.length %}
+<section class="band">
+  <div class="wrap">
+    <div class="band-head"><h2>Client words</h2></div>
+    <div class="quotes">
+    {%- for t in testimonials.testimonials %}
+      <blockquote>{{ t.quote }}<cite>{{ t.name }}{% if t.detail %}, {{ t.detail }}{% endif %}</cite></blockquote>
+    {%- endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

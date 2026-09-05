@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: Events and photoshoots
+permalink: /events/
+description: "Personal styling for a specific occasion, photoshoot, or event, from The Urban Sophisticate Collective in Cincinnati."
+---
+<div class="wrap page-head"><p class="kicker">One occasion, done right</p><h1>Events and photoshoots</h1><p class="lede">Are you looking for personal styling for a specific occasion, photoshoot, or event? That is where Halie started.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap two-col">
+    <img src="/images/tosca.jpg" alt="Pink floral midi dress on the steps of Cincinnati Opera" width="1199" height="1580" loading="lazy">
+    <div class="prose">
+      <h2>A night out</h2>
+      <p>Opera openings, galas, weddings, a dinner that matters. One look, sourced and fitted, with the shoes and the bag decided before the night. Halie's own night out for the opening of Tosca with Cincinnati Opera, in pink floral and red heels, is the kind of thing she means.</p>
+      <h2>Branding shoots and photoshoots</h2>
+      <p>When you go to a styled shoot, branding shoot, or event with heavy imagery in the background, wear solid colors. That is the first of many calls Halie makes for you. For her own branding shoot she arranged the sets and curated each outfit to reflect the season, and she does the same for clients: outfit, backdrop, and how the two read on camera.</p>
+      <p>Modeling is where her interest in wardrobing began, since she styled her own looks on set. She knows what photographs.</p>
+      <p style="margin-top:2rem"><a class="btn" href="/contact/">Book event styling</a></p>
+    </div>
+  </div>
+</section>
+<section class="band paper">
+  <div class="wrap">
+    <div class="band-head"><h2>From the branding shoot</h2><a class="textlink" href="/lookbook/">Full lookbook →</a></div>
+    <div class="strip">
+      {%- for s in ["/images/houndstooth-valentino.jpg","/images/halie-sunglasses.jpg","/images/green-sweater-bag.jpg","/images/gold-clutch.jpg","/images/halie-column.jpg","/images/portfolio-throwback.jpg"] %}
+      <a href="/lookbook/"><img src="{{ s }}" alt="" loading="lazy"></a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{% include "testimonials.njk" %}

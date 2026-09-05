@@ -139,3 +139,17 @@ p { margin: 0 0 1em; max-width: 64ch; }
 .next { padding-left: 1.2rem; margin: 0; }
 .next li { margin-bottom: .6rem; color: var(--ink-2); }
 .next strong { color: var(--ink); font-weight: 600; }
+.packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+.package { background: var(--white); border: 1px solid var(--rule); padding: 1.6rem 1.5rem 1.4rem; display: flex; flex-direction: column; }
+.package h3 { font-size: 1.6rem; margin: 0 0 .6rem; }
+.package p { font-size: .98rem; color: var(--ink-2); margin: 0 0 1rem; }
+.package .price { margin-top: auto; color: var(--ink); font-weight: 600; font-family: var(--display); font-size: 1.15rem; border-top: 1px solid var(--rule); padding-top: .9rem; }
+.quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.quotes blockquote { margin: 0; font-family: var(--display); font-size: 1.35rem; line-height: 1.35; padding-left: 1.2rem; border-left: 3px solid var(--gold); }
+.quotes cite { display: block; font-family: var(--body); font-style: normal; font-size: .9rem; color: var(--ink-2); margin-top: .8rem; }
+.foot-news { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: center; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.12); }
+.news-form { display: flex; gap: .6rem; }
+.news-form input { flex: 1; min-width: 0; font: inherit; padding: .8rem .9rem; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.06); color: #fff; }
+.news-form input::placeholder { color: rgba(255,255,255,.5); }
+.sr { position: absolute; left: -9999px; }
+@media (max-width: 700px) { .foot-news { grid-template-columns: 1fr; } }
