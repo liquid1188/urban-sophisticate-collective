@@ -244,3 +244,9 @@ p { margin: 0 0 1em; max-width: 64ch; }
 .site-foot.v2 .util a.totop svg { width: 16px; height: 16px; display: block; }
 
 .foot-logo { width: 210px; height: auto; margin: -.6rem 0 .6rem -.6rem; }
+
+/* Desktop view toggle (mobile only) */
+.site-foot.v2 .util .view-toggle { display: none; background: none; border: 0; color: rgba(255,255,255,.7); font: inherit; font-size: .88rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: 0; }
+.site-foot.v2 .util .view-toggle:hover { color: var(--foot-accent); }
+@media (max-width: 860px) { .site-foot.v2 .util .view-toggle { display: inline; } }
+html.desktop-view .site-foot.v2 .util .view-toggle { display: inline; }

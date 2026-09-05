@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>try{if(localStorage.getItem('uscDesktopView')==='1'){document.querySelector('meta[name="viewport"]').setAttribute('content','width=1280');document.documentElement.classList.add('desktop-view')}}catch(e){}</script>
   <title>{% if title %}{{ title }} · {{ site.name }}{% else %}{{ site.name }} · Personal Stylist and Wardrobe Consultant, Cincinnati{% endif %}</title>
   <meta name="description" content="{{ description or site.tagline }}">
   {% if site.setupMode %}<meta name="robots" content="noindex, nofollow">{% endif %}
@@ -70,8 +71,9 @@
   </div>
   <div class="wrap foot-bottom">
     <span class="copy">&copy; {{ today | year }} The Urban Sophisticate Collective.</span>
-    <span class="util"><a href="/admin/">Sign in</a><a href="https://lickitysplitweb.com">Site by Lickity Split Web Design</a><a class="totop" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="m6 14 6-6 6 6"/></svg></a></span>
+    <span class="util"><a href="/admin/">Sign in</a><a href="https://lickitysplitweb.com">Site by Lickity Split Web Design</a><button type="button" class="view-toggle" id="viewToggle">View desktop version</button><a class="totop" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="m6 14 6-6 6 6"/></svg></a></span>
   </div>
 </footer>
+<script>(function(){var k='uscDesktopView',b=document.getElementById('viewToggle');if(!b)return;if(localStorage.getItem(k)==='1')b.textContent='View mobile version';b.addEventListener('click',function(){localStorage.setItem(k,localStorage.getItem(k)==='1'?'0':'1');location.reload()})})();</script>
 </body>
 </html>
