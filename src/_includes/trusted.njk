@@ -1,6 +1,6 @@
 <section class="trusted">
   <div class="wrap">
     <p class="label">{{ trusted.line }}</p>
-    <div class="trusted-row">{% for t in trusted.items %}<span>{{ t }}</span>{% endfor %}</div>
+    <div class="trusted-row">{% for t in trusted.items %}<span{% if t == "Logo here" %} class="placeholder"{% endif %}>{{ t }}</span>{% endfor %}</div>
   </div>
 </section>
