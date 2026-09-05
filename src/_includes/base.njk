@@ -49,38 +49,28 @@
   </div>
 </section>
 {% endif %}
-<footer class="site-foot">
-  <div class="wrap foot-grid">
-    <div>
+<footer class="site-foot v2">
+  <div class="wrap foot-top">
+    <div class="fbrand">
       <p class="foot-brand">The Urban Sophisticate Collective</p>
+      
       <p class="foot-tag">Personal styling with a fresh approach. {{ site.territory }}, and by appointment.</p>
+      <div class="foot-ctas"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="/pricing/">Pricing</a></div>
     </div>
-    <div>
-      <h3>Explore</h3>
-      <a href="/services/">Services</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/events/">Events and photoshoots</a>
-      <a href="/clients/">Clients</a>
-      <a href="/lookbook/">Lookbook</a>
-      <a href="/notes/">Notes</a>
-      <a href="/about/">About Halie</a>
-      <a href="/contact/">Book a consultation</a>
-    </div>
-    <div>
-      <h3>Follow</h3>
-      <a href="{{ site.instagram }}"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg> Instagram</a>
-      <a href="{{ site.substack }}"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h18v2.6H3zM3 8.1h18v2.6H3zM3 13.2h18V21l-9-4.6L3 21z"/></svg> The Urban Edit on Substack</a>
-      <a href="{{ site.facebook }}">Facebook</a>
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <div class="fcol"><h3>Explore</h3><a href="/services/">Services</a><a href="/events/">Events and photoshoots</a><a href="/clients/">Clients</a><a href="/lookbook/">Lookbook</a><a href="/notes/">Notes</a><a href="/about/">About Halie</a></div><div class="fcol"><h3>The Urban Edit</h3><a href="{{ site.substack }}">Read on Substack</a><a href="/notes/fashion-week/">Fashion week notes</a><a href="/notes/black-to-an-event/">Unpopular opinions</a></div>
+    <div class="fcol fcontact">
+      <h3>Connect</h3>
+      <a class="crow" href="mailto:{{ site.email }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="1.7" d="m3 7 9 6 9-6"/></svg><span>{{ site.email }}</span></a><span class="crow"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>{{ site.territory }}</span></span>
+      <div class="socials"><a class="soc" href="{{ site.instagram }}" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></a><a class="soc" href="{{ site.substack }}" aria-label="Substack" title="Substack"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h18v2.6H3zM3 8.1h18v2.6H3zM3 13.2h18V21l-9-4.6L3 21z"/></svg></a><a class="soc" href="{{ site.facebook }}" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7h2.4l.4-3h-2.8V9.2c0-.9.3-1.5 1.5-1.5h1.5V5.1c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.6v7z"/></svg></a></div>
     </div>
   </div>
   <div class="wrap foot-news">
-    <div><p class="foot-brand" style="font-size:1.25rem"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h18v2.6H3zM3 8.1h18v2.6H3zM3 13.2h18V21l-9-4.6L3 21z"/></svg> Get The Urban Edit</p><p class="foot-tag">What's next, what's loud, and what actually works off the runway and on the streets. Free, from Halie.</p></div>
+    <div><p class="foot-brand">Get The Urban Edit</p><p class="foot-tag">What's next, what's loud, and what actually works off the runway and on the streets. Free, from Halie.</p></div>
     <form class="news-form" action="{{ site.substack }}/subscribe" method="get" target="_blank"><label class="sr" for="nl-email">Email</label><input id="nl-email" type="email" name="email" placeholder="you@example.com" required><button class="btn" type="submit">Subscribe</button></form>
   </div>
-  <div class="wrap foot-small">
-    <span>&copy; {{ today | year }} The Urban Sophisticate Collective.</span>
-    <span>Site by <a href="https://lickitysplitweb.com">Lickity Split Web Design</a>. <a href="/admin/">Sign in</a></span>
+  <div class="wrap foot-bottom">
+    <span class="copy">&copy; {{ today | year }} The Urban Sophisticate Collective.</span>
+    <span class="util"><a href="/admin/">Sign in</a><a href="https://lickitysplitweb.com">Site by Lickity Split Web Design</a><a class="totop" href="#main" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="m6 14 6-6 6 6"/></svg></a></span>
   </div>
 </footer>
 </body>
