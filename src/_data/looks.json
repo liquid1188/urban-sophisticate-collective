@@ -1,5 +1,12 @@
 [
  {
+  "src": "/images/fountain-black-dress.jpg",
+  "alt": "Beaded black dress at Fountain Square, Cincinnati",
+  "credit": "Fountain Square, Cincinnati",
+  "w": 1206,
+  "h": 1503
+ },
+ {
   "src": "/images/halie-column.jpg",
   "alt": "Navy blazer, burgundy shirt, and striped tie",
   "credit": "Blazer Banana Republic · Shirt Jos. A. Bank · Bag Hermès · Loafers Gucci",
@@ -26,6 +33,27 @@
   "credit": "From the January 2025 branding shoot",
   "w": 1206,
   "h": 1498
+ },
+ {
+  "src": "/images/tweed-mirror.jpg",
+  "alt": "Tweed blazer, white shirt, camel trousers, Marc Jacobs tote",
+  "credit": "Blazer Banana Republic · Bag Marc Jacobs",
+  "w": 1206,
+  "h": 1500
+ },
+ {
+  "src": "/images/tie-blazer.jpg",
+  "alt": "Navy blazer, striped tie, aviators",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1503
+ },
+ {
+  "src": "/images/sweater-vest-mirror.jpg",
+  "alt": "Sweater vest over a striped shirt with jeans and loafers",
+  "credit": "Weekend uniform",
+  "w": 1206,
+  "h": 1500
  },
  {
   "src": "/images/yellow-dress-italy.jpg",
