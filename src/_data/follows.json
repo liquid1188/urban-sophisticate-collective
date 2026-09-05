@@ -1,0 +1,23 @@
+{
+ "intro": "A few people whose eye we trust. Halie's recommended follows.",
+ "follows": [
+  {
+   "name": "Elliot Duprey",
+   "handle": "elliotduprey",
+   "url": "https://www.instagram.com/elliotduprey/",
+   "note": "Proof that a true fashionista can look chic on any budget. Halie cites him on exactly that point."
+  },
+  {
+   "name": "Wisdom Kaye",
+   "handle": "wisdm",
+   "url": "https://www.instagram.com/wisdm/",
+   "note": "The internet's best-dressed man. Fearless color, proportion, and reference, and a reminder that style is a point of view."
+  },
+  {
+   "name": "Parker York Smith",
+   "handle": "parkeryorksmith",
+   "url": "https://www.instagram.com/parkeryorksmith/",
+   "note": "Menswear that grown men can actually wear. Fit, fabric, and knowing where to spend."
+  }
+ ]
+}

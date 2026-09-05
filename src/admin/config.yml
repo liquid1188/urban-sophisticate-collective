@@ -50,3 +50,9 @@ collections:
         file: src/_data/partners.json
         fields:
           - { name: partners, label: Partners, widget: list, fields: [ { name: name, label: Name }, { name: detail, label: Detail, required: false }, { name: url, label: URL, required: false }, { name: logo, label: Logo, widget: image, required: false }, { name: image, label: Photo, widget: image, required: false }, { name: status, label: Status, widget: select, options: [confirmed, proposed], default: confirmed } ] }
+      - name: follows
+        label: Recommended follows
+        file: src/_data/follows.json
+        fields:
+          - { name: intro, label: Intro }
+          - { name: follows, label: Accounts, widget: list, fields: [ { name: name, label: Name }, { name: handle, label: Instagram handle (no @) }, { name: url, label: URL }, { name: note, label: Why, widget: text } ] }

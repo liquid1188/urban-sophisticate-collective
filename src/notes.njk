@@ -12,3 +12,14 @@ description: "Style tips, opinions, and Q&A from Halie."
   {%- endfor %}
   </div>
 </section>
+<section class="band paper">
+  <div class="wrap">
+    <div class="band-head"><h2>Who we follow</h2></div>
+    <p class="lede" style="margin-bottom:2rem">{{ follows.intro }}</p>
+    <div class="follows">
+    {%- for f in follows.follows %}
+      <a class="follow" href="{{ f.url }}"><span class="handle">@{{ f.handle }}</span><strong>{{ f.name }}</strong><p>{{ f.note }}</p></a>
+    {%- endfor %}
+    </div>
+  </div>
+</section>

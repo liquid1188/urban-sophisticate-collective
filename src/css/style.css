@@ -203,3 +203,10 @@ p { margin: 0 0 1em; max-width: 64ch; }
 .site-foot.v2 .copy a { display: inline; color: inherit; text-decoration: underline; text-decoration-color: rgba(255,255,255,.3); }
 .site-foot.v2 .crow span { overflow-wrap: anywhere; }
 .site-foot.v2 .fcontact { min-width: 0; }
+.follows { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.follow { display: block; text-decoration: none; color: inherit; background: var(--white); border: 1px solid var(--rule); padding: 1.4rem 1.4rem 1.2rem; }
+.follow .handle { display: block; font-size: .8rem; letter-spacing: .08em; color: var(--gold); font-weight: 600; margin-bottom: .5rem; }
+.follow strong { display: block; font-family: var(--display); font-size: 1.5rem; font-weight: 500; margin-bottom: .5rem; }
+.follow p { margin: 0; font-size: .95rem; color: var(--ink-2); }
+.follow:hover strong { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
+@media (max-width: 800px) { .follows { grid-template-columns: 1fr; } }
