@@ -221,3 +221,20 @@ p { margin: 0 0 1em; max-width: 64ch; }
 @media (max-width: 520px) { .who { gap: 2rem; border-top: 0; padding-top: 0; } }
 .site-foot.v2 .fcol a.soc { display: inline-flex; align-items: center; justify-content: center; padding: 0; width: 38px; height: 38px; }
 .site-foot.v2 .fcol a.soc svg { width: 18px; height: 18px; display: block; }
+/* Section rhythm */
+.band:not(.dark) + .band:not(.dark) { border-top: 1px solid var(--rule); }
+.page-head { padding-bottom: 1.6rem; }
+.page-head + .band { border-top: 1px solid var(--rule); }
+.band-head { padding-bottom: .9rem; border-bottom: 1px solid var(--rule); }
+.band.dark .band-head { border-bottom-color: rgba(255,255,255,.15); }
+@media (max-width: 860px) {
+  .hero-img { max-height: 62vh; object-fit: cover; object-position: top; }
+  .process { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+  .process h3 { font-size: 1.15rem; }
+  .process p { font-size: .9rem; }
+  .notes { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+  .note-card h3 { font-size: 1.2rem; }
+  .steps { gap: 1.6rem; }
+  .steps > div { padding-top: 1rem; border-top: 1px solid var(--rule); }
+}
+@media (max-width: 520px) { .process { grid-template-columns: 1fr 1fr; } .notes { grid-template-columns: 1fr 1fr; } }
