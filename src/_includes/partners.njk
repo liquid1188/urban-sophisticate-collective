@@ -4,7 +4,7 @@
     <div class="band-head"><h2>Partners</h2></div>
     <div class="partners-row">
     {%- for p in partners.partners %}
-      <a class="partner" href="{{ p.url or '#' }}">{% if p.logo %}<img src="{{ p.logo }}" alt="{{ p.name }}" loading="lazy">{% else %}<strong>{{ p.name }}</strong>{% endif %}<span>{{ p.detail }}{% if p.status == 'proposed' %}{% if site.setupMode %} · in conversation{% endif %}{% endif %}</span></a>
+      <a class="partner{% if p.image %} has-image{% endif %}" href="{{ p.url or '#' }}">{% if p.image %}<img class="partner-photo" src="{{ p.image }}" alt="" loading="lazy">{% endif %}<span class="partner-text">{% if p.logo %}<img src="{{ p.logo }}" alt="{{ p.name }}" loading="lazy">{% else %}<strong>{{ p.name }}</strong>{% endif %}<span>{{ p.detail }}{% if p.status == 'proposed' and site.setupMode %} · in conversation{% endif %}</span></span></a>
     {%- endfor %}
     </div>
   </div>

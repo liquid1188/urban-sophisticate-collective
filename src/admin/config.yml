@@ -49,4 +49,4 @@ collections:
         label: Partners and sponsors
         file: src/_data/partners.json
         fields:
-          - { name: partners, label: Partners, widget: list, fields: [ { name: name, label: Name }, { name: detail, label: Detail, required: false }, { name: url, label: URL, required: false }, { name: logo, label: Logo, widget: image, required: false }, { name: status, label: Status, widget: select, options: [confirmed, proposed], default: confirmed } ] }
+          - { name: partners, label: Partners, widget: list, fields: [ { name: name, label: Name }, { name: detail, label: Detail, required: false }, { name: url, label: URL, required: false }, { name: logo, label: Logo, widget: image, required: false }, { name: image, label: Photo, widget: image, required: false }, { name: status, label: Status, widget: select, options: [confirmed, proposed], default: confirmed } ] }

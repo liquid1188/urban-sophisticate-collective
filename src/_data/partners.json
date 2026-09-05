@@ -1,10 +1,11 @@
 {
  "partners": [
   {
-   "name": "Proud Hound Coffee Roasters",
-   "detail": "Cincinnati",
-   "url": "https://proudhoundcoffee.com",
+   "name": "Urbana Cafe",
+   "detail": "Cincinnati. Home to so many of our business meetings.",
+   "url": "https://www.instagram.com/urbanacafe/",
    "logo": "",
+   "image": "/images/urbana-cafe.jpg",
    "status": "proposed"
   }
  ]

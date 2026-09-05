@@ -162,3 +162,6 @@ p { margin: 0 0 1em; max-width: 64ch; }
 .partner strong { font-family: var(--display); font-size: 1.4rem; font-weight: 500; }
 .partner span { font-size: .85rem; color: var(--ink-2); }
 .ico { width: 1em; height: 1em; vertical-align: -.15em; margin-right: .3em; }
+.partner.has-image { grid-template-columns: 140px 1fr; gap: 1.2rem; align-items: center; }
+.partner-photo { width: 140px; aspect-ratio: 4 / 5; object-fit: cover; }
+.partner-text { display: grid; gap: .2rem; }
