@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description or site.tagline }}">
+  {% if site.setupMode %}<meta name="robots" content="noindex, nofollow">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v={{ buildId }}">
+</head>
+<body{% if page.url == "/" %} class="home"{% endif %}>
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="/"><span>The Urban Sophisticate</span> Collective</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#reels">Reels</a>
+      <a href="#about">Halie</a>
+      <a class="btn small" href="#contact">Book a consult</a>
+    </nav>
+  </div>
+</header>
+<main id="main">{{ content | safe }}</main>
+<footer class="site-foot">
+  <div class="wrap foot">
+    <p class="foot-brand">The Urban Sophisticate Collective</p>
+    <p><a href="{{ site.instagram }}">Instagram</a> · <a href="{{ site.facebook }}">Facebook</a> · <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="fine">&copy; {{ today | year }} The Urban Sophisticate Collective. Site by <a href="https://lickitysplitweb.com">Lickity Split Web Design</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

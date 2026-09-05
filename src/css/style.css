@@ -1,0 +1,52 @@
+:root { --ink: #161412; --ink-2: #6a645c; --bone: #f4efe7; --white: #fbf9f5; --rule: rgba(22,20,18,.14); --dark: #1a1816; --accent: #b5533b; --display: "Cormorant", Georgia, serif; --body: "Manrope", system-ui, sans-serif; --wide: 1160px; --gutter: clamp(1.1rem, 4vw, 2.5rem); }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--body); font-size: 1.05rem; line-height: 1.6; color: var(--ink); background: var(--bone); }
+img, video { max-width: 100%; height: auto; display: block; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.05; margin: 0 0 .6em; letter-spacing: -.01em; text-wrap: balance; }
+h1 { font-size: clamp(3rem, 7vw, 6rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: 1.5rem; }
+p { margin: 0 0 1em; max-width: 64ch; }
+.wrap { max-width: var(--wide); margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+.btn { display: inline-block; background: var(--ink); color: #fff; font-weight: 600; text-decoration: none; padding: .9rem 1.5rem; border: 1px solid var(--ink); letter-spacing: .02em; }
+.btn.ghost { background: transparent; color: inherit; border-color: currentColor; }
+.btn.small { padding: .5rem 1rem; font-size: .95rem; }
+.site-head { border-bottom: 1px solid var(--rule); }
+.bar { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 1rem; }
+.brand { font-family: var(--display); font-size: 1.35rem; color: inherit; text-decoration: none; line-height: 1; }
+.brand span { display: block; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; font-family: var(--body); color: var(--ink-2); margin-bottom: .2rem; }
+.nav { display: flex; gap: 1.4rem; align-items: center; }
+.nav a { color: inherit; text-decoration: none; font-weight: 500; }
+@media (max-width: 720px) { .nav a:not(.btn) { display: none; } }
+.hero { padding: clamp(4rem, 10vw, 8rem) 0; background: var(--white); }
+.kicker { letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; color: var(--ink-2); margin-bottom: 1rem; }
+.hero h1 { max-width: 14ch; }
+.hero h1 em { font-style: italic; color: var(--accent); }
+.lede { font-size: clamp(1.15rem, 1.6vw, 1.35rem); max-width: 38rem; }
+.actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.band { padding: clamp(3.5rem, 7vw, 6rem) 0; }
+.band.dark { background: var(--dark); color: #fff; }
+.band.dark p { color: rgba(255,255,255,.8); }
+.band.dark .btn { background: #fff; color: var(--ink); border-color: #fff; }
+.band-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
+.band-head h2 { margin: 0; }
+.band-head a { color: inherit; }
+.note { font-size: .9rem; color: var(--accent); }
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; border-top: 1px solid var(--rule); padding-top: 2rem; }
+.services p { font-size: 1rem; margin: 0; }
+.reels { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; }
+.reels figure { margin: 0; max-width: 360px; }
+.reels video { aspect-ratio: 9 / 16; object-fit: cover; width: 100%; background: #000; border-radius: 6px; }
+.reels figcaption { margin-top: .7rem; font-size: .95rem; color: rgba(255,255,255,.8); }
+.reels figcaption strong { color: #fff; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+@media (max-width: 860px) { .two-col { grid-template-columns: 1fr; } }
+.photo-placeholder { aspect-ratio: 4 / 5; background: var(--white); border: 1px dashed var(--rule); display: grid; place-items: center; color: var(--ink-2); font-family: var(--display); font-size: 1.3rem; }
+.form { display: grid; gap: .8rem; }
+.form label { display: grid; gap: .3rem; font-size: .95rem; font-weight: 500; }
+.form input, .form textarea { min-width: 0; width: 100%; font: inherit; padding: .8rem .9rem; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.06); color: #fff; }
+.form button { font: inherit; justify-self: start; cursor: pointer; }
+.site-foot { padding: 3rem 0 2rem; border-top: 1px solid var(--rule); }
+.foot-brand { font-family: var(--display); font-size: 1.4rem; margin-bottom: .3rem; }
+.foot a { color: inherit; }
+.fine { font-size: .9rem; color: var(--ink-2); }

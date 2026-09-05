@@ -1,0 +1,68 @@
+---
+layout: base.njk
+permalink: /
+description: "Wardrobe styling with a fresh approach. Halie blends custom, vintage, and street fashion into looks that are unmistakably yours."
+---
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">Wardrobe styling · New York</p>
+    <h1>Dressed like <em>yourself</em>, only more so.</h1>
+    <p class="lede">Halie blends custom, vintage, and street fashion into looks that reflect who you already are. Closet edits, personal shopping, event styling, and a fresh eye on what you own.</p>
+    <div class="actions"><a class="btn" href="#contact">Book a consult</a><a class="btn ghost" href="#services">See the services</a></div>
+  </div>
+</section>
+
+<section class="band" id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="note">Placeholder. Halie's copy and pricing go here.</p>
+    <div class="services">
+      <div><h3>Closet edit</h3><p>Two to three hours in your closet. What stays, what goes, what's missing, and twenty outfits you didn't know you had.</p></div>
+      <div><h3>Personal shopping</h3><p>Vintage, custom, and new, sourced to a list we build together. In person or from a curated pull sent to you.</p></div>
+      <div><h3>Event styling</h3><p>One look, one occasion, from the invitation to the door. Weddings, galas, shoots, and the nights that matter.</p></div>
+      <div><h3>Seasonal refresh</h3><p>A standing edit each season so the wardrobe keeps up with your life without a full rebuild.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band dark" id="reels">
+  <div class="wrap">
+    <div class="band-head"><h2>From the feed</h2><a href="{{ site.instagram }}">@urbansophisticatecollective</a></div>
+    <div class="reels">
+    {%- for r in reels %}
+      <figure>
+        <video controls preload="none" poster="{{ r.poster }}" playsinline><source src="{{ r.src }}" type="video/mp4"></video>
+        <figcaption><strong>{{ r.title }}</strong><br>{{ r.note }}</figcaption>
+      </figure>
+    {%- endfor %}
+    </div>
+    <p class="note" style="margin-top:1.5rem">Placeholder reel, cropped from Instagram. The originals replace these before launch.</p>
+  </div>
+</section>
+
+<section class="band" id="about">
+  <div class="wrap two-col">
+    <div class="photo-placeholder">Photo of Halie</div>
+    <div>
+      <h2>Halie</h2>
+      <p class="lede">Lead wardrobe consultant. Halie's styling began years ago out of a love of fashion and an eye for what makes a person look like themselves.</p>
+      <p class="note">Placeholder. Halie's bio arrives with the photos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band dark" id="contact">
+  <div class="wrap two-col">
+    <div>
+      <h2>Start with a conversation.</h2>
+      <p class="lede">Tell Halie what you're dressing for and what's not working. She'll come back with a plan.</p>
+    </div>
+    <form class="form" action="https://formsubmit.co/{{ site.email }}" method="POST">
+      <input type="hidden" name="_subject" value="Consult request from the website">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>What are you dressing for? <textarea name="message" rows="4"></textarea></label>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
