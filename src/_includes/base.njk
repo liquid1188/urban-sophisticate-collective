@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="/css/style.css?v={{ buildId }}">
   <meta property="og:title" content="{{ title or site.name }}">
   <meta property="og:description" content="{{ description or site.tagline }}">
-  <meta property="og:image" content="{{ site.url }}/images/halie-column.jpg">
+  <meta property="og:image" content="{{ site.url }}/images/og.png">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"The Urban Sophisticate Collective","description":"Personal styling and wardrobe consulting in Cincinnati.","url":"{{ site.url }}","email":"{{ site.email }}","founder":{"@type":"Person","name":"Halie"},"areaServed":"Cincinnati, OH","sameAs":["{{ site.instagram }}","{{ site.substack }}",],"foundingDate":"2025-01-01","image":"{{ site.url }}/images/halie-lipstick-hero.jpg"}</script>
 </head>
 <body{% if page.url == "/" %} class="home"{% endif %}>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
   <div class="wrap bar">
-    <a class="brand" href="/"><span>The Urban Sophisticate</span>Collective</a>
+    <a class="brand" href="/"><img src="/images/brand/lockup-horizontal.svg" alt="The Urban Sophisticate Collective" width="772" height="118"></a>
     <input type="checkbox" id="menu" class="menu-toggle" aria-label="Open menu">
     <label for="menu" class="menu-btn"><span></span><span></span></label>
     <nav class="nav" aria-label="Main">
@@ -52,7 +52,7 @@
 <footer class="site-foot v2">
   <div class="wrap foot-top">
     <div class="fbrand">
-      <p class="foot-brand">The Urban Sophisticate Collective</p>
+      <img class="foot-logo" src="/images/brand/lockup-stacked-dark.svg" alt="The Urban Sophisticate Collective" width="420" height="236" loading="lazy">
       
       <p class="foot-tag">Personal styling with a fresh approach. {{ site.territory }}, and by appointment.</p>
       <div class="foot-ctas"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="/pricing/">Pricing</a></div>

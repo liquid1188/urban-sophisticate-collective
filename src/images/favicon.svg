@@ -1,1 +1,2 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#1b2144"/><text x="32" y="45" font-family="Georgia, serif" font-size="34" text-anchor="middle" fill="#f4efe7">U</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#1b2144"/><path d="M32 10c-5 0-8 3.5-8 7.5 0 4 8 4 8 10v4" stroke="#c9a24d" stroke-width="3.2" fill="none" stroke-linecap="round"/><path d="M32 31.5L8 52h48z" stroke="#c9a24d" stroke-width="3.2" fill="none" stroke-linejoin="round"/></svg>
