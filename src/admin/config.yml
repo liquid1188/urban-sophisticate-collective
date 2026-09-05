@@ -35,7 +35,6 @@ collections:
           - { name: territory, label: Territory line }
           - { name: instagram, label: Instagram URL }
           - { name: substack, label: Substack URL }
-          - { name: facebook, label: Facebook URL }
           - { name: calendly, label: "Calendly link (paste to enable online booking)", required: false }
           - { name: url, label: Site URL }
           - { name: setupMode, label: Setup mode (noindex), widget: boolean }
