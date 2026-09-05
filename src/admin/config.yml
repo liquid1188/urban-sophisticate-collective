@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: liquid1188/urban-sophisticate-collective
+  branch: main
+media_folder: src/images
+public_folder: /images
+collections:
+  - name: content
+    label: Site content
+    files:
+      - name: notes
+        label: Notes
+        file: src/_data/notes.json
+        fields:
+          - { name: notes, label: Notes, widget: list, fields: [ { name: slug, label: Slug }, { name: title, label: Title }, { name: kicker, label: Kicker }, { name: image, label: Image, widget: image }, { name: q, label: Question, required: false }, { name: asker, label: Asked by, required: false }, { name: body, label: Body, widget: text } ] }

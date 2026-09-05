@@ -1,0 +1,21 @@
+---
+layout: base.njk
+pagination:
+  data: notes.notes
+  size: 1
+  alias: n
+permalink: "/notes/{{ n.slug }}/"
+eleventyComputed:
+  title: "{{ n.title }}"
+---
+<div class="wrap page-head"><p class="kicker"><a href="/notes/" style="text-decoration:none;color:inherit">Notes</a> · {{ n.kicker }}</p><h1>{{ n.title }}</h1></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap two-col top">
+    <img src="{{ n.image }}" alt="" width="1206" height="1500">
+    <div class="prose">
+      {% if n.q %}<blockquote>“{{ n.q }}”<cite>{{ n.asker }}</cite></blockquote>{% endif %}
+      {% for para in n.body.split("\n\n") %}<p>{{ para }}</p>{% endfor %}
+      <p style="margin-top:2rem"><a class="btn ghost" href="/#contact">Ask Halie a question</a></p>
+    </div>
+  </div>
+</section>

@@ -1,33 +1,76 @@
 ---
 layout: base.njk
 permalink: /
-description: "Wardrobe styling with a fresh approach. Halie blends custom, vintage, and street fashion into looks that are unmistakably yours."
+description: "Personal styling with a fresh approach. Halie blends vintage, high street, athletic, and custom pieces into a wardrobe that is unmistakably yours. Cincinnati and Northern Kentucky."
 ---
 <section class="hero">
-  <div class="wrap">
-    <p class="kicker">Wardrobe styling · New York</p>
-    <h1>Dressed like <em>yourself</em>, only more so.</h1>
-    <p class="lede">Halie blends custom, vintage, and street fashion into looks that reflect who you already are. Closet edits, personal shopping, event styling, and a fresh eye on what you own.</p>
-    <div class="actions"><a class="btn" href="#contact">Book a consult</a><a class="btn ghost" href="#services">See the services</a></div>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Personal styling · Cincinnati and Northern Kentucky</p>
+      <h1>Be inspired by your own wardrobe.</h1>
+      <p class="lede">Personal styling with a fresh approach. Halie blends vintage, high street, athletic, and custom pieces into looks that express who you already are, for women, men, and children.</p>
+      <div class="actions"><a class="btn" href="#contact">Book a consultation</a><a class="btn ghost" href="#services">How it works</a></div>
+    </div>
+    <img class="hero-img" src="/images/halie-column.jpg" alt="Halie, seated on a column in a navy blazer, burgundy shirt, and striped tie" width="1206" height="1509" fetchpriority="high">
   </div>
 </section>
 
 <section class="band" id="services">
   <div class="wrap">
-    <h2>Services</h2>
-    <p class="note">Placeholder. Halie's copy and pricing go here.</p>
-    <div class="services">
-      <div><h3>Closet edit</h3><p>Two to three hours in your closet. What stays, what goes, what's missing, and twenty outfits you didn't know you had.</p></div>
-      <div><h3>Personal shopping</h3><p>Vintage, custom, and new, sourced to a list we build together. In person or from a curated pull sent to you.</p></div>
-      <div><h3>Event styling</h3><p>One look, one occasion, from the invitation to the door. Weddings, galas, shoots, and the nights that matter.</p></div>
-      <div><h3>Seasonal refresh</h3><p>A standing edit each season so the wardrobe keeps up with your life without a full rebuild.</p></div>
+    <div class="band-head"><h2>What it looks like to hire a personal stylist</h2></div>
+    <div class="steps">
+      <div><p class="num">01</p><h3>Consultation</h3><p>Narrow down your style goals and see how we can help.</p></div>
+      <div><p class="num">02</p><h3>Wardrobe and color analysis</h3><p>Identify the gaps in what you own and discover what complements your features.</p></div>
+      <div><p class="num">03</p><h3>Personalized selections</h3><p>Curated pieces just for you, drawn from vintage, high street, athletic, and custom.</p></div>
+      <div><p class="num">04</p><h3>Coaching</h3><p>Learn how to mix, match, and unlock your confidence with guidance throughout.</p></div>
+    </div>
+    <p class="lede" style="margin-top:2.5rem">Styling for women, men, and children. Individuals going through life changes, athletes, and professionals from every industry.</p>
+  </div>
+</section>
+
+<section class="band dark">
+  <div class="wrap">
+    <div class="band-head"><h2>Lookbook</h2><a class="textlink" href="/lookbook/">See all →</a></div>
+    <div class="strip">
+    {%- for l in looks.slice(0, 6) %}
+      <a href="/lookbook/"><img src="{{ l.src }}" alt="{{ l.alt }}" width="{{ l.w }}" height="{{ l.h }}" loading="lazy"></a>
+    {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band" id="halie">
+  <div class="wrap two-col">
+    <img src="/images/halie-lipstick.jpg" alt="Halie" width="1206" height="1506" loading="lazy">
+    <div>
+      <p class="kicker">CEO and chief stylist</p>
+      <h2>Halie</h2>
+      <p class="lede">Halie's passion for styling backs every aspect of The Urban Sophisticate Collective.</p>
+      <p>She has worked with a wide variety of clients, including individuals going through life changes, athletes, and professionals from major industries. She has been collecting vintage and vinyl since 2008, and her taste brings a fresh perspective to the fashion industry.</p>
+      <p>She is a Dalmatian gal and loves her pup, Oakley, named after the neighborhood in Cincinnati. She is a true foodie with a penchant for niche restaurants; ask her about styling and she may also point you to the best dinner in town.</p>
+      <a class="btn ghost" href="#contact">Work with Halie</a>
+    </div>
+  </div>
+</section>
+
+<section class="band paper">
+  <div class="wrap">
+    <div class="band-head"><h2>Notes</h2><a class="textlink" href="/notes/">All notes →</a></div>
+    <div class="notes">
+    {%- for n in notes.notes.slice(0, 3) %}
+      <a class="note-card" href="/notes/{{ n.slug }}/">
+        <img src="{{ n.image }}" alt="" loading="lazy">
+        <p class="kicker">{{ n.kicker }}</p>
+        <h3>{{ n.title }}</h3>
+      </a>
+    {%- endfor %}
     </div>
   </div>
 </section>
 
 <section class="band dark" id="reels">
   <div class="wrap">
-    <div class="band-head"><h2>From the feed</h2><a href="{{ site.instagram }}">@urbansophisticatecollective</a></div>
+    <div class="band-head"><h2>From the feed</h2><a class="textlink" href="{{ site.instagram }}">@urbansophisticatecollective</a></div>
     <div class="reels">
     {%- for r in reels %}
       <figure>
@@ -36,31 +79,23 @@ description: "Wardrobe styling with a fresh approach. Halie blends custom, vinta
       </figure>
     {%- endfor %}
     </div>
-    <p class="note" style="margin-top:1.5rem">Placeholder reel, cropped from Instagram. The originals replace these before launch.</p>
   </div>
 </section>
 
-<section class="band" id="about">
-  <div class="wrap two-col">
-    <div class="photo-placeholder">Photo of Halie</div>
-    <div>
-      <h2>Halie</h2>
-      <p class="lede">Lead wardrobe consultant. Halie's styling began years ago out of a love of fashion and an eye for what makes a person look like themselves.</p>
-      <p class="note">Placeholder. Halie's bio arrives with the photos.</p>
-    </div>
-  </div>
-</section>
-
-<section class="band dark" id="contact">
-  <div class="wrap two-col">
+<section class="band" id="contact">
+  <div class="wrap two-col top">
     <div>
       <h2>Start with a conversation.</h2>
-      <p class="lede">Tell Halie what you're dressing for and what's not working. She'll come back with a plan.</p>
+      <p class="lede">Tell Halie what you're dressing for and what isn't working. The consultation narrows your goals and shows how she can help.</p>
+      <p>Or send a message on <a href="{{ site.instagram }}">Instagram</a>.</p>
     </div>
     <form class="form" action="https://formsubmit.co/{{ site.email }}" method="POST">
-      <input type="hidden" name="_subject" value="Consult request from the website">
+      <input type="hidden" name="_subject" value="Consultation request from the website">
       <label>Name <input type="text" name="name" required></label>
       <label>Email <input type="email" name="email" required></label>
+      <label>I'm interested in
+        <select name="service"><option>A consultation</option><option>Wardrobe and color analysis</option><option>Personalized selections</option><option>Styling for an event</option><option>Styling for my child</option><option>Something else</option></select>
+      </label>
       <label>What are you dressing for? <textarea name="message" rows="4"></textarea></label>
       <button class="btn" type="submit">Send</button>
     </form>

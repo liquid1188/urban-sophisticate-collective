@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: Notes
+permalink: /notes/
+description: "Style tips, opinions, and Q&A from Halie."
+---
+<div class="wrap page-head"><h1>Notes</h1><p class="lede">Fashion tips, trends, opinions, and answers to your questions.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap notes">
+  {%- for n in notes.notes %}
+    <a class="note-card" href="/notes/{{ n.slug }}/"><img src="{{ n.image }}" alt="" loading="lazy"><p class="kicker">{{ n.kicker }}</p><h3>{{ n.title }}</h3></a>
+  {%- endfor %}
+  </div>
+</section>
