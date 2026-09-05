@@ -15,7 +15,7 @@ eleventyComputed:
     <div class="prose">
       {% if n.q %}<blockquote>“{{ n.q }}”<cite>{{ n.asker }}</cite></blockquote>{% endif %}
       {% for para in n.body.split("\n\n") %}<p>{{ para }}</p>{% endfor %}
-      <p style="margin-top:2rem"><a class="btn ghost" href="/#contact">Ask Halie a question</a></p>
+      <p style="margin-top:2rem"><a class="btn ghost" href="/contact/">Ask Halie a question</a></p>
     </div>
   </div>
 </section>

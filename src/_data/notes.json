@@ -1,25 +1,11 @@
 {
  "notes": [
   {
-   "slug": "capsule-wardrobe",
-   "title": "Ditch the idea of a capsule wardrobe",
-   "kicker": "A style tip",
-   "image": "/images/style-tip-lipstick.jpg",
-   "body": "Take it out of your vocabulary.\n\nInstead of focusing on this \"capsule wardrobe\" idea, open yourself up to more possibilities and look for a variety of interesting pieces that make you unique."
-  },
-  {
-   "slug": "travel-wardrobe",
-   "title": "Plan your wardrobe before you travel",
-   "kicker": "A style tip",
-   "image": "/images/style-tip-hat.jpg",
-   "body": "If you plan properly, you won't find yourself scrambling to curate new outfits and having to buy when you get to your destination.\n\nA properly planned wardrobe can save you time and money. Need help planning for your next vacation? That's a service."
-  },
-  {
-   "slug": "solid-colors",
-   "title": "Wear solids to a shoot",
-   "kicker": "A style tip",
-   "image": "/images/style-tip-gold.jpg",
-   "body": "When you go to a styled shoot, branding shoot, or event with heavy imagery in the background, wear solid colors. Avoid patterns so you don't clash with the background. You will look chic and professional in every photo."
+   "slug": "black-to-an-event",
+   "title": "Should you wear black to an event?",
+   "kicker": "Unpopular opinion",
+   "image": "/images/black-to-event.jpg",
+   "body": "Wearing a black dress to any public formal event, that is not a funeral, should be OUTLAWED.\n\nYou are celebrating someone's big day! It's a big freaking deal, and you should express that excitement in what you wear.\n\nThey are not dead."
   },
   {
    "slug": "polo-bear",
@@ -31,6 +17,27 @@
    "body": "The Polo Bear by Ralph Lauren is actually an iconic and fun take on a character that is now intrinsic to the brand. It originally started as a joke between Ralph and his brother Jerry in 1990, when they were both given Steiff bears by colleagues. They started selling their own iteration of the bear and then transitioned into adding it to t-shirts and sweatshirts, later adding it to knitwear.\n\nI also own a Polo Bear sweater with the Collegiate Bear on it and can attest that it adds whimsy to a classic-styled look. It'll totally stand the test of time so long as the joke is running."
   },
   {
+   "slug": "edgy-with-a-rule",
+   "title": "Edgy with a rule",
+   "kicker": "A style tip",
+   "image": "/images/style-tip-edgy.jpg",
+   "body": "Dressing \"edgy with a rule\" means finishing off a clean look with polished pieces.\n\nIn this outfit, the leather pieces and structure create edge while the classic pattern of the Burberry sweater and simplicity of the jewelry make it easy to wear for a night out, because it still keeps the look streamlined.\n\nThe aim is to keep the look clean while pushing the rule by blending casual and formal styles, using oversized proportions, and polished accessories."
+  },
+  {
+   "slug": "capsule-wardrobe",
+   "title": "Ditch the idea of a capsule wardrobe",
+   "kicker": "A style tip",
+   "image": "/images/style-tip-lipstick.jpg",
+   "body": "Take it out of your vocabulary.\n\nInstead of focusing on this \"capsule wardrobe\" idea, open yourself up to more possibilities and look for a variety of interesting pieces that make you unique."
+  },
+  {
+   "slug": "dressing-well-on-a-budget",
+   "title": "Dressing well does not require a hefty budget",
+   "kicker": "A style tip",
+   "image": "/images/style-tip-budget.jpg",
+   "body": "If you believe that dressing well requires a hefty budget, think again. A true fashionista can look chic on any budget.\n\nThe key lies in understanding which fabrics and styles to choose and knowing where to source them."
+  },
+  {
    "slug": "isabel-marant",
    "title": "Unpopular opinion: the Isabel Marant trend",
    "kicker": "Style opinion",
@@ -38,11 +45,39 @@
    "body": "Have you seen the \"Isabel Marant girl\" popping up left and right? The hype of this boho chic style?\n\nOur first thoughts on it: it could be beneficial for brand visibility, but you should avoid buying the collections if you are only doing it to buy into the hype of the trend. Leave the collections to the boho-niche girlies and flaunt your own unique style."
   },
   {
-   "slug": "fashion-week",
-   "title": "Fashion month, show by show",
-   "kicker": "Commentary",
-   "image": "/images/berlin-issue.jpg",
-   "body": "Berlin Fashion Week kicks off first, with the others following shortly after. We keep you updated with the latest news and commentary from each show.\n\nFollow along for the pinnacle of the fashion industry and all the excitement it has to offer."
+   "slug": "mixing-patterns",
+   "title": "Mixing patterns, a Saturday OOTD",
+   "kicker": "OOTD",
+   "image": "/images/saturday-ootd.jpg",
+   "body": "A sunny Saturday OOTD. A look created by mixing patterns, with Halie's most-worn bag as of late.\n\nJacket: Target. Wool scarf: Burberry. Turtleneck: J.Crew. Denim: Banana Republic. Loafers: Gucci. Bag: YSL. Sunglasses: Celine."
+  },
+  {
+   "slug": "travel-wardrobe",
+   "title": "Plan your wardrobe before you travel",
+   "kicker": "A style tip",
+   "image": "/images/style-tip-hat.jpg",
+   "body": "If you plan properly, you won't find yourself scrambling to curate new outfits and having to buy when you get to your destination.\n\nA properly planned wardrobe can save you time and money. Need help planning for your next vacation? That's a service."
+  },
+  {
+   "slug": "color-analysis",
+   "title": "What color analysis is and why it matters",
+   "kicker": "The process",
+   "image": "/images/color-analysis.jpg",
+   "body": "It is important to consider color analysis when styling a wardrobe. This is the process of determining your natural undertones and narrowing down what colors complement them. It ensures that your clothing brings out your natural beauty.\n\nColor analysis is part of our wardrobe styling process, so your clothing selections flatter every feature."
+  },
+  {
+   "slug": "solid-colors",
+   "title": "Wear solids to a shoot",
+   "kicker": "A style tip",
+   "image": "/images/style-tip-solids.jpg",
+   "body": "When you go to a styled shoot, branding shoot, or event with heavy imagery in the background, wear solid colors. Avoid patterns so you don't clash with the background. You will look chic and professional in every photo."
+  },
+  {
+   "slug": "melted-butter",
+   "title": "A color we are loving this spring: melted butter",
+   "kicker": "Color",
+   "image": "/images/melted-butter.jpg",
+   "body": "A color we are loving this spring: melted butter.\n\nPantone 1215. HEX #FBE99F. CMYK 2, 5, 46, 0. RGB 251, 233, 159."
   },
   {
    "slug": "flatlay",
@@ -52,11 +87,25 @@
    "body": "An outfit can look a lot different when it's lying on the ground or hanging in the closet, versus when it's actually worn.\n\nWhen looking for inspiration, look for outfits that are actually being modeled or that you have a chance to try on."
   },
   {
+   "slug": "fashion-week",
+   "title": "Fashion month, show by show",
+   "kicker": "Commentary",
+   "image": "/images/lfw-designers-graphic.jpg",
+   "body": "Berlin Fashion Week kicks off first, with the others following shortly after. We keep you updated with the latest news and commentary from each show.\n\nFollow along for the pinnacle of the fashion industry and all the excitement it has to offer."
+  },
+  {
    "slug": "pinterest",
    "title": "Using Pinterest for outfit inspiration",
    "kicker": "A tip from your stylist",
    "image": "/images/red-sweater-cafe.jpg",
    "body": "Create a cluster to determine your color palette. This will form the basis of your outfit and guide you when searching for pieces.\n\nOnly save outfits and pieces that are actually being modeled. An outfit will look much different lying flat or hanging versus when it is worn."
+  },
+  {
+   "slug": "ash-wednesday",
+   "title": "Make your style liturgical",
+   "kicker": "Seasons",
+   "image": "/images/ash-wednesday.jpg",
+   "body": "Ash Wednesday: the day that marks our descent into the spiritual desert. When considering what to wear, this IS the time to think of plain colours. Grey, brown, and black bring our souls and minds in unison to contemplate why we give up certain things.\n\nConsider making your style liturgical today.\n\nPhoto: \"Unto Dust,\" Humble Arts Foundation."
   },
   {
    "slug": "versace",

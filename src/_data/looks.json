@@ -1,10 +1,10 @@
 [
  {
-  "src": "/images/fountain-black-dress.jpg",
-  "alt": "Beaded black dress at Fountain Square, Cincinnati",
-  "credit": "Fountain Square, Cincinnati",
+  "src": "/images/notre-dame.jpg",
+  "alt": "Corduroy blazer over a Polo Bear sweater at Notre Dame Stadium",
+  "credit": "Game day at Notre Dame. Corduroy blazer, Polo Bear sweater, wide-leg denim, loafers",
   "w": 1206,
-  "h": 1503
+  "h": 1506
  },
  {
   "src": "/images/halie-column.jpg",
@@ -14,11 +14,25 @@
   "h": 1509
  },
  {
+  "src": "/images/saturday-ootd.jpg",
+  "alt": "Houndstooth jacket with a plaid wool scarf and a cream YSL bag",
+  "credit": "Jacket Target · Wool scarf Burberry · Turtleneck J.Crew · Denim Banana Republic · Loafers Gucci · Bag YSL · Sunglasses Celine",
+  "w": 1206,
+  "h": 1506
+ },
+ {
   "src": "/images/gold-clutch.jpg",
   "alt": "Houndstooth and a gold Valentino clutch",
   "credit": "From the January 2025 branding shoot",
   "w": 1206,
   "h": 1505
+ },
+ {
+  "src": "/images/school-ootd.jpg",
+  "alt": "Brown cardigan, silk scarf, and khakis on stone steps",
+  "credit": "OOTD, school edition",
+  "w": 1206,
+  "h": 1500
  },
  {
   "src": "/images/green-sweater-bag.jpg",
@@ -28,11 +42,25 @@
   "h": 1502
  },
  {
+  "src": "/images/night-street.jpg",
+  "alt": "Plaid blazer, sweater tied at the shoulders, cap, and a white bag at night",
+  "credit": "A night out in the neighborhood. Plaid blazer, sweater over the shoulders, wide-leg trousers",
+  "w": 1206,
+  "h": 1502
+ },
+ {
   "src": "/images/halie-sunglasses.jpg",
   "alt": "Gold aviators over a navy blazer",
   "credit": "From the January 2025 branding shoot",
   "w": 1206,
   "h": 1498
+ },
+ {
+  "src": "/images/houndstooth-valentino.jpg",
+  "alt": "Houndstooth suit with a gold Valentino bag and gold heels",
+  "credit": "From the January 2025 branding shoot. Bag Valentino",
+  "w": 1206,
+  "h": 1507
  },
  {
   "src": "/images/tweed-mirror.jpg",
@@ -138,5 +166,12 @@
   "credit": "From the January 2025 branding shoot",
   "w": 1206,
   "h": 1506
+ },
+ {
+  "src": "/images/black-coat-crouch.jpg",
+  "alt": "Long black puffer, Prada beanie, and Prada boots",
+  "credit": "Winter layers for fickle weather. Beanie and boots Prada",
+  "w": 1206,
+  "h": 1500
  }
 ]

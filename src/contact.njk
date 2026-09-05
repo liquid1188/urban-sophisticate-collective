@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Book a consultation
+permalink: /contact/
+description: "Book a wardrobe consultation with Halie of The Urban Sophisticate Collective. Cincinnati and Northern Kentucky."
+---
+<div class="wrap page-head"><h1>Start with a conversation.</h1><p class="lede">Tell Halie what you're dressing for and what isn't working. The consultation narrows your goals and shows how she can help.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap two-col top">
+    <form class="form" action="https://formsubmit.co/{{ site.email }}" method="POST">
+      <input type="hidden" name="_subject" value="Consultation request from the website">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>I'm interested in
+        <select name="service"><option>A consultation</option><option>Wardrobe and color analysis</option><option>Personalized selections</option><option>Styling for an event</option><option>Styling for my child</option><option>Something else</option></select>
+      </label>
+      <label>What are you dressing for? <textarea name="message" rows="5"></textarea></label>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <div>
+      <h3>Or reach out directly</h3>
+      <p>Send a message on <a href="{{ site.instagram }}">Instagram</a>, or DM "wardrobe consult" to learn more about our services.</p>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p>Cincinnati and Northern Kentucky, and by appointment.</p>
+      <img src="/images/upgrade.jpg" alt="Upgrade your wardrobe with The Urban Sophisticate Collective" width="1206" height="1507" loading="lazy" style="margin-top:1.5rem;max-width:380px">
+    </div>
+  </div>
+</section>
