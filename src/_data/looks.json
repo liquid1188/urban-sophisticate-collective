@@ -7,11 +7,25 @@
   "h": 1506
  },
  {
+  "src": "/images/tosca.jpg",
+  "alt": "Pink floral midi dress with red heels at Cincinnati Opera",
+  "credit": "A night out with Cincinnati Opera for the opening of Tosca",
+  "w": 1199,
+  "h": 1580
+ },
+ {
   "src": "/images/halie-column.jpg",
   "alt": "Navy blazer, burgundy shirt, and striped tie",
-  "credit": "Blazer Banana Republic · Shirt Jos. A. Bank · Bag Hermès · Loafers Gucci",
+  "credit": "Blazer Banana Republic · Shirt Target · Jewelry Van Cleef & Arpels · Bag Hermès · Pants Target · Belt Banana Republic · Shoes Gucci · Tie Chanel · Sunglasses Gucci",
   "w": 1206,
   "h": 1509
+ },
+ {
+  "src": "/images/downtown-vintage.jpg",
+  "alt": "Grey blazer, black tee, cuffed denim, and loafers beside a black Beetle",
+  "credit": "Downtown Vintage Vibe. Sunglasses Miu Miu · Blazer Prada · Top Target · Jewelry Van Cleef & Arpels · Watch Cartier · Denim Levi's · Bag Ferragamo · Belt and loafers Banana Republic",
+  "w": 1206,
+  "h": 1600
  },
  {
   "src": "/images/saturday-ootd.jpg",
@@ -19,6 +33,13 @@
   "credit": "Jacket Target · Wool scarf Burberry · Turtleneck J.Crew · Denim Banana Republic · Loafers Gucci · Bag YSL · Sunglasses Celine",
   "w": 1206,
   "h": 1506
+ },
+ {
+  "src": "/images/spring-culottes.jpg",
+  "alt": "Black leather jacket, silk scarf, gingham culottes, and mesh flats on a porch",
+  "credit": "Spring things and the Alaïa flats",
+  "w": 1206,
+  "h": 1499
  },
  {
   "src": "/images/gold-clutch.jpg",
@@ -51,9 +72,16 @@
  {
   "src": "/images/halie-sunglasses.jpg",
   "alt": "Gold aviators over a navy blazer",
-  "credit": "From the January 2025 branding shoot",
+  "credit": "From the January 2025 branding shoot. Blazer Banana Republic · Shirt Target · Tie Chanel · Jewelry Van Cleef & Arpels · Sunglasses Gucci",
   "w": 1206,
   "h": 1498
+ },
+ {
+  "src": "/images/portfolio-throwback.jpg",
+  "alt": "Studio portrait, black ruffled blouse and red lip",
+  "credit": "A portfolio throwback. Modeling is what sparked her interest in wardrobing",
+  "w": 1206,
+  "h": 1507
  },
  {
   "src": "/images/houndstooth-valentino.jpg",
@@ -72,7 +100,7 @@
  {
   "src": "/images/tie-blazer.jpg",
   "alt": "Navy blazer, striped tie, aviators",
-  "credit": "From the January 2025 branding shoot",
+  "credit": "From the January 2025 branding shoot. Blazer Banana Republic · Shirt Target · Tie Chanel · Jewelry Van Cleef & Arpels · Sunglasses Gucci",
   "w": 1206,
   "h": 1503
  },
@@ -98,6 +126,13 @@
   "h": 1509
  },
  {
+  "src": "/images/spring-culottes-selfie.jpg",
+  "alt": "Leather jacket, silk scarf, and gold watch",
+  "credit": "Spring things",
+  "w": 1206,
+  "h": 1507
+ },
+ {
   "src": "/images/red-sweater-cafe.jpg",
   "alt": "Red cardigan and tiramisu, Italy, spring 2023",
   "credit": "Tiramisu, but make it chic. From the Italy archives",
@@ -114,7 +149,7 @@
  {
   "src": "/images/black-coat-steps.jpg",
   "alt": "Long black puffer and Prada beanie on stone steps",
-  "credit": "Winter layers for fickle weather",
+  "credit": "Monochromatic Prada, with Berliner taste. Coat, hat, sunglasses, shoes Prada · Crushed velvet jacket and denim dress Target · Rings Cartier · Earrings Bottega Veneta",
   "w": 1206,
   "h": 1506
  },
@@ -135,7 +170,7 @@
  {
   "src": "/images/beanie-sunglasses.jpg",
   "alt": "Prada beanie and cat-eye sunglasses in winter sun",
-  "credit": "Winter style, kept warm",
+  "credit": "Monochromatic Prada, with Berliner taste. Coat, hat, sunglasses, shoes Prada · Crushed velvet jacket and denim dress Target · Rings Cartier · Earrings Bottega Veneta",
   "w": 1206,
   "h": 1506
  },
@@ -149,7 +184,7 @@
  {
   "src": "/images/black-coat-full.jpg",
   "alt": "Black coat, full length",
-  "credit": "Winter layers",
+  "credit": "Monochromatic Prada, with Berliner taste. Coat, hat, sunglasses, shoes Prada · Crushed velvet jacket and denim dress Target · Rings Cartier · Earrings Bottega Veneta",
   "w": 1206,
   "h": 1505
  },
@@ -163,15 +198,22 @@
  {
   "src": "/images/halie-lipstick.jpg",
   "alt": "Red lipstick, navy blazer, striped tie",
-  "credit": "From the January 2025 branding shoot",
+  "credit": "From the January 2025 branding shoot. Blazer Banana Republic · Shirt Target · Tie Chanel · Jewelry Van Cleef & Arpels · Sunglasses Gucci",
   "w": 1206,
   "h": 1506
  },
  {
   "src": "/images/black-coat-crouch.jpg",
   "alt": "Long black puffer, Prada beanie, and Prada boots",
-  "credit": "Winter layers for fickle weather. Beanie and boots Prada",
+  "credit": "Monochromatic Prada, with Berliner taste. Coat, hat, sunglasses, shoes Prada · Crushed velvet jacket and denim dress Target · Rings Cartier · Earrings Bottega Veneta",
   "w": 1206,
   "h": 1500
+ },
+ {
+  "src": "/images/spring-flats.jpg",
+  "alt": "Mesh Mary Jane flats and gingham culottes on porch boards",
+  "credit": "The Alaïa flats",
+  "w": 1206,
+  "h": 1506
  }
 ]
