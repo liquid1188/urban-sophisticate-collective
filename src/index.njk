@@ -6,9 +6,9 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="kicker">Wardrobe consulting · Cincinnati, Ohio</p>
+      <p class="kicker">Personal styling · Cincinnati</p>
       <h1>Be inspired by your own wardrobe.</h1>
-      <p class="lede">Personal styling with a fresh approach. Halie blends vintage, high street, athletic, and custom pieces into looks that express who you already are, for women, men, and children.</p>
+      <p class="lede">High street and high fashion can coexist. Halie puts vintage, custom, athletic, and off-the-rack pieces together into looks that express who you already are. For women, men, and children.</p>
       <div class="actions"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="/services/">How it works</a></div>
     </div>
     <img class="hero-img" src="/images/halie-column.jpg" alt="Halie in a navy blazer and striped tie" width="1206" height="1509" fetchpriority="high">
@@ -28,6 +28,10 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
   </div>
 </section>
 
+<section class="band paper quote-band">
+  <div class="wrap"><blockquote>Having a stylist is a game-changer for everyone, whether you're just going out to lunch or stepping onto the red carpet.<cite>Halie</cite></blockquote></div>
+</section>
+
 <section class="band dark">
   <div class="wrap">
     <div class="band-head"><h2>Lookbook</h2><a class="textlink" href="/lookbook/">See all →</a></div>
@@ -41,12 +45,12 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
 
 <section class="band" id="halie">
   <div class="wrap two-col">
-    <img src="/images/halie-lipstick.jpg" alt="Halie" width="1206" height="1506" loading="lazy">
+    <img src="/images/halie-records.jpg" alt="Halie in front of her record collection" width="1206" height="2131" loading="lazy">
     <div>
       <p class="kicker">CEO and lead wardrobe consultant</p>
       <h2>Halie</h2>
-      <p class="lede">Halie's passion for styling backs every aspect of The Urban Sophisticate Collective, which she launched on January 1, 2025.</p>
-      <p>She blends custom, vintage, and street fashion to craft looks that reflect your style, and has worked with individuals going through life changes, athletes, and professionals from major industries.</p>
+      <p class="lede">The face of the brand and the creative force behind it. Halie brings a fresh and fun twist to personal styling.</p>
+      <p>Vintage gems to custom-made pieces, put together to refresh your wardrobe and add some excitement to your everyday looks. She has worked with individuals going through life changes, athletes, and professionals from major industries, and has collected vintage and vinyl since 2008.</p>
       <div class="actions"><a class="btn ghost" href="/about/">More about Halie</a><a class="textlink" href="/contact/" style="align-self:center">Work with Halie →</a></div>
     </div>
   </div>
@@ -64,6 +68,24 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
       </a>
     {%- endfor %}
     </div>
+  </div>
+</section>
+
+<section class="band" id="substack">
+  <div class="wrap two-col top">
+    <div>
+      <p class="kicker">The newsletter</p>
+      <h2>The Urban Edit</h2>
+      <p class="lede">Consider this your go-to for what's next, what's loud, and what actually works off the runway and on the streets.</p>
+      <p>Styling tips, runway commentary, outfit inspiration, and all things fashion, from Halie on Substack.</p>
+      {%- if substack.length %}
+      <div class="posts">
+      {%- for p in substack %}<a class="post" href="{{ p.link }}"><span class="kicker">{{ p.date }}</span><strong>{{ p.title }}</strong><span>{{ p.summary }}</span></a>{% endfor %}
+      </div>
+      {%- endif %}
+      <a class="btn" href="{{ site.substack }}">Read and subscribe</a>
+    </div>
+    <a href="{{ site.substack }}" class="substack-card"><img src="/images/halie-cafe.jpg" alt="Halie" width="1206" height="1201" loading="lazy"><span><strong>The Urban Edit</strong>by Halie Nicole, on Substack</span></a>
   </div>
 </section>
 
