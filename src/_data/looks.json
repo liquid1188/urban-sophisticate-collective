@@ -1,18 +1,114 @@
 [
- {"src":"/images/halie-column.jpg","alt":"Halie in a navy blazer, burgundy shirt, and striped tie, seated on a column","w":1206,"h":1509},
- {"src":"/images/houndstooth-full.jpg","alt":"Houndstooth jacket and skirt with a gold Valentino clutch","w":1206,"h":1509},
- {"src":"/images/green-sweater-bag.jpg","alt":"Green knit and a cream Gucci Jackie bag","w":1206,"h":1502},
- {"src":"/images/halie-sunglasses.jpg","alt":"Halie lowering gold aviators","w":1206,"h":1498},
- {"src":"/images/houndstooth-scarf.jpg","alt":"Houndstooth with a silk scarf","w":1206,"h":1506},
- {"src":"/images/black-coat-steps.jpg","alt":"Black puffer coat and beanie on stone steps","w":1206,"h":1506},
- {"src":"/images/gold-clutch.jpg","alt":"Gold clutch held overhead","w":1206,"h":1505},
- {"src":"/images/yellow-dress-italy.jpg","alt":"Yellow dress and headscarf on a terrace in Italy","w":1206,"h":901},
- {"src":"/images/bag-overhead.jpg","alt":"Cream bag balanced overhead","w":1206,"h":1503},
- {"src":"/images/berlin-bw.jpg","alt":"Black and white, Berlin Fashion Week","w":1206,"h":1507},
- {"src":"/images/beanie-sunglasses.jpg","alt":"Beanie and cat-eye sunglasses in winter sun","w":1206,"h":1506},
- {"src":"/images/houndstooth-gold-bag.jpg","alt":"Houndstooth and gold","w":1206,"h":1507},
- {"src":"/images/red-sweater-cafe.jpg","alt":"Red sweater at a café","w":1206,"h":1509},
- {"src":"/images/black-coat-full.jpg","alt":"Black coat, full length","w":1206,"h":1505},
- {"src":"/images/green-sweater-close.jpg","alt":"Green knit, gold jewelry","w":1206,"h":1507},
- {"src":"/images/halie-lipstick.jpg","alt":"Halie applying red lipstick","w":1206,"h":1506}
+ {
+  "src": "/images/halie-column.jpg",
+  "alt": "Navy blazer, burgundy shirt, and striped tie",
+  "credit": "Blazer Banana Republic · Shirt Jos. A. Bank · Bag Hermès · Loafers Gucci",
+  "w": 1206,
+  "h": 1509
+ },
+ {
+  "src": "/images/gold-clutch.jpg",
+  "alt": "Houndstooth and a gold Valentino clutch",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1505
+ },
+ {
+  "src": "/images/green-sweater-bag.jpg",
+  "alt": "Green knit and a cream Gucci Jackie bag",
+  "credit": "Sweater Banana Republic · Pants J.Crew · Bag and shoes Gucci · Jewelry Van Cleef & Arpels",
+  "w": 1206,
+  "h": 1502
+ },
+ {
+  "src": "/images/halie-sunglasses.jpg",
+  "alt": "Gold aviators over a navy blazer",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1498
+ },
+ {
+  "src": "/images/yellow-dress-italy.jpg",
+  "alt": "Yellow dress and headscarf on a terrace in Assisi",
+  "credit": "Headscarf Loft · Sunglasses Ray-Ban · Vintage pearls · Dress PopSugar · Shoes and bag Mango, bought in Trevi",
+  "w": 1206,
+  "h": 901
+ },
+ {
+  "src": "/images/houndstooth-full.jpg",
+  "alt": "Houndstooth jacket and skirt, gold sandals",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1509
+ },
+ {
+  "src": "/images/red-sweater-cafe.jpg",
+  "alt": "Red cardigan and tiramisu, Italy, spring 2023",
+  "credit": "Tiramisu, but make it chic. From the Italy archives",
+  "w": 1206,
+  "h": 1509
+ },
+ {
+  "src": "/images/houndstooth-scarf.jpg",
+  "alt": "Houndstooth with a silk scarf",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1506
+ },
+ {
+  "src": "/images/black-coat-steps.jpg",
+  "alt": "Long black puffer and Prada beanie on stone steps",
+  "credit": "Winter layers for fickle weather",
+  "w": 1206,
+  "h": 1506
+ },
+ {
+  "src": "/images/bag-overhead.jpg",
+  "alt": "Cream Gucci bag held overhead in a green knit",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1503
+ },
+ {
+  "src": "/images/berlin-bw.jpg",
+  "alt": "Black and white, Berlin Fashion Week",
+  "credit": "The Berlin Fashion Week issue",
+  "w": 1206,
+  "h": 1507
+ },
+ {
+  "src": "/images/beanie-sunglasses.jpg",
+  "alt": "Prada beanie and cat-eye sunglasses in winter sun",
+  "credit": "Winter style, kept warm",
+  "w": 1206,
+  "h": 1506
+ },
+ {
+  "src": "/images/houndstooth-gold-bag.jpg",
+  "alt": "Houndstooth and gold",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1507
+ },
+ {
+  "src": "/images/black-coat-full.jpg",
+  "alt": "Black coat, full length",
+  "credit": "Winter layers",
+  "w": 1206,
+  "h": 1505
+ },
+ {
+  "src": "/images/green-sweater-close.jpg",
+  "alt": "Green knit, gold jewelry, tortoiseshell sunglasses",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1507
+ },
+ {
+  "src": "/images/halie-lipstick.jpg",
+  "alt": "Red lipstick, navy blazer, striped tie",
+  "credit": "From the January 2025 branding shoot",
+  "w": 1206,
+  "h": 1506
+ }
 ]

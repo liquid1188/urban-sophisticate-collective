@@ -4,9 +4,9 @@ title: Lookbook
 permalink: /lookbook/
 description: "Looks styled and worn by Halie of The Urban Sophisticate Collective."
 ---
-<div class="wrap page-head"><h1>Lookbook</h1><p class="lede">Styled and worn by Halie. Vintage, high street, and custom, put together the way we'd do it for you.</p></div>
+<div class="wrap page-head"><h1>Lookbook</h1><p class="lede">Styled and worn by Halie. Vintage, high street, and custom, put together the way we'd do it for you. Credits under each look.</p></div>
 <section class="band" style="padding-top:1.5rem">
   <div class="wrap gallery">
-  {%- for l in looks %}<a href="{{ l.src }}"><img src="{{ l.src }}" alt="{{ l.alt }}" width="{{ l.w }}" height="{{ l.h }}" loading="lazy"></a>{% endfor %}
+  {%- for l in looks %}<figure><a href="{{ l.src }}"><img src="{{ l.src }}" alt="{{ l.alt }}" width="{{ l.w }}" height="{{ l.h }}" loading="lazy"></a><figcaption>{{ l.credit }}</figcaption></figure>{% endfor %}
   </div>
 </section>

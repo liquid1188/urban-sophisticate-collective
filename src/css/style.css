@@ -99,3 +99,5 @@ p { margin: 0 0 1em; max-width: 64ch; }
 .foot-small { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.12); font-size: .9rem; color: rgba(255,255,255,.6); }
 .foot-small a { display: inline; }
 @media (max-width: 700px) { .foot-grid { grid-template-columns: 1fr; } }
+.gallery figure { margin: 0 0 1.2rem; break-inside: avoid; }
+.gallery figcaption { font-size: .85rem; color: var(--ink-2); margin-top: .5rem; line-height: 1.45; }
