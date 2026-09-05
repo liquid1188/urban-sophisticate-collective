@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <title>{% if title %}{{ title }} · {{ site.name }}{% else %}{{ site.name }} · Personal Stylist and Wardrobe Consultant, Cincinnati{% endif %}</title>
   <meta name="description" content="{{ description or site.tagline }}">
   {% if site.setupMode %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
@@ -14,6 +14,7 @@
   <meta property="og:title" content="{{ title or site.name }}">
   <meta property="og:description" content="{{ description or site.tagline }}">
   <meta property="og:image" content="{{ site.url }}/images/halie-column.jpg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"The Urban Sophisticate Collective","description":"Personal styling and wardrobe consulting in Cincinnati and Northern Kentucky.","url":"{{ site.url }}","email":"{{ site.email }}","founder":{"@type":"Person","name":"Halie"},"areaServed":["Cincinnati, OH","Northern Kentucky"],"sameAs":["{{ site.instagram }}","{{ site.substack }}","{{ site.facebook }}"],"foundingDate":"2025-01-01","image":"{{ site.url }}/images/halie-lipstick-hero.jpg"}</script>
 </head>
 <body{% if page.url == "/" %} class="home"{% endif %}>
 <a class="skip" href="#main">Skip to content</a>
@@ -32,6 +33,19 @@
   </div>
 </header>
 <main id="main">{{ content | safe }}</main>
+{% if page.url != "/" and page.url != "/contact/" %}
+<section class="band dark cta-band">
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker">Ready when you are</p>
+      <h2>Be inspired by your own wardrobe.</h2>
+      <p class="lede">A consultation with Halie is where it starts. Tell her what you're dressing for and what isn't working.</p>
+      <div class="actions"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="/services/">How it works</a></div>
+    </div>
+    <img src="/images/halie-sunglasses.jpg" alt="" width="1206" height="1498" loading="lazy">
+  </div>
+</section>
+{% endif %}
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div>

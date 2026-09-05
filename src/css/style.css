@@ -134,3 +134,8 @@ p { margin: 0 0 1em; max-width: 64ch; }
 .post span:last-child { color: var(--ink-2); font-size: .95rem; }
 .post .kicker { margin: 0; }
 @media (min-width: 1000px) { .notes { grid-template-columns: repeat(4, 1fr); } .home .notes { grid-template-columns: repeat(3, 1fr); } }
+.cta-band .two-col > img { max-width: 380px; justify-self: end; aspect-ratio: 4 / 5; object-fit: cover; }
+@media (max-width: 860px) { .cta-band .two-col > img { display: none; } }
+.next { padding-left: 1.2rem; margin: 0; }
+.next li { margin-bottom: .6rem; color: var(--ink-2); }
+.next strong { color: var(--ink); font-weight: 600; }

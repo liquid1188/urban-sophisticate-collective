@@ -11,7 +11,7 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
       <p class="lede">High street and high fashion can coexist. Halie puts vintage, custom, athletic, and off-the-rack pieces together into looks that express who you already are. For women, men, and children.</p>
       <div class="actions"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="/services/">How it works</a></div>
     </div>
-    <img class="hero-img" src="/images/halie-column.jpg" alt="Halie in a navy blazer and striped tie" width="1206" height="1509" fetchpriority="high">
+    <img class="hero-img" src="/images/halie-lipstick-hero.jpg" alt="Halie applying red lipstick in a navy blazer and striped tie" width="1206" height="1506" fetchpriority="high">
   </div>
 </section>
 
@@ -36,9 +36,10 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
   <div class="wrap">
     <div class="band-head"><h2>Lookbook</h2><a class="textlink" href="/lookbook/">See all →</a></div>
     <div class="strip">
-    {%- for l in looks.slice(0, 6) %}
+    {%- set picks = ["/images/houndstooth-valentino.jpg","/images/tosca.jpg","/images/downtown-vintage.jpg","/images/portfolio-throwback.jpg","/images/green-sweater-bag.jpg","/images/halie-sunglasses.jpg"] %}
+    {%- for l in looks %}{% if l.src in picks %}
       <a href="/lookbook/" title="{{ l.credit }}"><img src="{{ l.src }}" alt="{{ l.alt }}" width="{{ l.w }}" height="{{ l.h }}" loading="lazy"></a>
-    {%- endfor %}
+    {%- endif %}{% endfor %}
     </div>
   </div>
 </section>
@@ -106,8 +107,8 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
 <section class="band" id="contact">
   <div class="wrap two-col">
     <div>
-      <h2>Start with a conversation.</h2>
-      <p class="lede">Tell Halie what you're dressing for and what isn't working. The consultation narrows your goals and shows how she can help.</p>
+      <h2>Be inspired by your own wardrobe.</h2>
+      <p class="lede">Tell Halie what you're dressing for and what isn't working. The consultation is where it starts.</p>
       <div class="actions"><a class="btn" href="/contact/">Book a consultation</a><a class="btn ghost" href="{{ site.instagram }}">Message on Instagram</a></div>
     </div>
     <img src="/images/school-ootd.jpg" alt="Halie on the steps" width="1206" height="1500" loading="lazy">
