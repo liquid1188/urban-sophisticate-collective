@@ -215,3 +215,7 @@ p { margin: 0 0 1em; max-width: 64ch; }
 .site-foot.v2 .crow span { overflow-wrap: break-word; word-break: normal; }
 .site-foot.v2 .soc { flex: none; }
 .site-foot.v2 .fcol a.crow, .site-foot.v2 .fcol span.crow { display: flex; align-items: center; gap: .75rem; }
+.who > div { padding-top: 1.2rem; border-top: 2px solid var(--gold); }
+.who h3 { margin-bottom: .5rem; }
+.who p { line-height: 1.55; }
+@media (max-width: 520px) { .who { gap: 2rem; border-top: 0; padding-top: 0; } }
