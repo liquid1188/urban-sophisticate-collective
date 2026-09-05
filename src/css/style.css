@@ -153,3 +153,12 @@ p { margin: 0 0 1em; max-width: 64ch; }
 .news-form input::placeholder { color: rgba(255,255,255,.5); }
 .sr { position: absolute; left: -9999px; }
 @media (max-width: 700px) { .foot-news { grid-template-columns: 1fr; } }
+.trusted { background: var(--white); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 1.4rem 0; }
+.trusted .label { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 .7rem; font-weight: 600; }
+.trusted-row { display: flex; flex-wrap: wrap; gap: .6rem 2rem; font-family: var(--display); font-size: 1.2rem; color: var(--ink); }
+.partners-row { display: flex; flex-wrap: wrap; gap: 2rem 3rem; align-items: center; }
+.partner { text-decoration: none; color: inherit; display: grid; gap: .2rem; }
+.partner img { height: 48px; width: auto; }
+.partner strong { font-family: var(--display); font-size: 1.4rem; font-weight: 500; }
+.partner span { font-size: .85rem; color: var(--ink-2); }
+.ico { width: 1em; height: 1em; vertical-align: -.15em; margin-right: .3em; }

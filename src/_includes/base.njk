@@ -14,7 +14,7 @@
   <meta property="og:title" content="{{ title or site.name }}">
   <meta property="og:description" content="{{ description or site.tagline }}">
   <meta property="og:image" content="{{ site.url }}/images/halie-column.jpg">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"The Urban Sophisticate Collective","description":"Personal styling and wardrobe consulting in Cincinnati and Northern Kentucky.","url":"{{ site.url }}","email":"{{ site.email }}","founder":{"@type":"Person","name":"Halie"},"areaServed":["Cincinnati, OH","Northern Kentucky"],"sameAs":["{{ site.instagram }}","{{ site.substack }}","{{ site.facebook }}"],"foundingDate":"2025-01-01","image":"{{ site.url }}/images/halie-lipstick-hero.jpg"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"The Urban Sophisticate Collective","description":"Personal styling and wardrobe consulting in Cincinnati.","url":"{{ site.url }}","email":"{{ site.email }}","founder":{"@type":"Person","name":"Halie"},"areaServed":"Cincinnati, OH","sameAs":["{{ site.instagram }}","{{ site.substack }}","{{ site.facebook }}"],"foundingDate":"2025-01-01","image":"{{ site.url }}/images/halie-lipstick-hero.jpg"}</script>
 </head>
 <body{% if page.url == "/" %} class="home"{% endif %}>
 <a class="skip" href="#main">Skip to content</a>
@@ -24,8 +24,9 @@
     <input type="checkbox" id="menu" class="menu-toggle" aria-label="Open menu">
     <label for="menu" class="menu-btn"><span></span><span></span></label>
     <nav class="nav" aria-label="Main">
-      <a href="/services/"{% if page.url == '/services/' or page.url == '/packages/' %} aria-current="page"{% endif %}>Services</a>
+      <a href="/services/"{% if page.url == '/services/' or page.url == '/pricing/' %} aria-current="page"{% endif %}>Services</a>
       <a href="/events/"{% if page.url == '/events/' %} aria-current="page"{% endif %}>Events</a>
+      <a href="/clients/"{% if page.url == '/clients/' %} aria-current="page"{% endif %}>Clients</a>
       <a href="/lookbook/"{% if page.url == '/lookbook/' %} aria-current="page"{% endif %}>Lookbook</a>
       <a href="/notes/"{% if '/notes' in page.url %} aria-current="page"{% endif %}>Notes</a>
       <a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>Halie</a>
@@ -35,7 +36,7 @@
 </header>
 <main id="main">{{ content | safe }}</main>
 {% if page.url != "/" and page.url != "/contact/" %}
-{% if page.url == "/services/" or page.url == "/about/" %}{% include "testimonials.njk" %}{% endif %}
+
 <section class="band dark cta-band">
   <div class="wrap two-col">
     <div>
@@ -57,8 +58,9 @@
     <div>
       <h3>Explore</h3>
       <a href="/services/">Services</a>
-      <a href="/packages/">Packages</a>
+      <a href="/pricing/">Pricing</a>
       <a href="/events/">Events and photoshoots</a>
+      <a href="/clients/">Clients</a>
       <a href="/lookbook/">Lookbook</a>
       <a href="/notes/">Notes</a>
       <a href="/about/">About Halie</a>
@@ -66,14 +68,14 @@
     </div>
     <div>
       <h3>Follow</h3>
-      <a href="{{ site.instagram }}">Instagram</a>
-      <a href="{{ site.substack }}">The Urban Edit on Substack</a>
+      <a href="{{ site.instagram }}"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg> Instagram</a>
+      <a href="{{ site.substack }}"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h18v2.6H3zM3 8.1h18v2.6H3zM3 13.2h18V21l-9-4.6L3 21z"/></svg> The Urban Edit on Substack</a>
       <a href="{{ site.facebook }}">Facebook</a>
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
   </div>
   <div class="wrap foot-news">
-    <div><p class="foot-brand" style="font-size:1.25rem">Get The Urban Edit</p><p class="foot-tag">What's next, what's loud, and what actually works off the runway and on the streets. Free, from Halie.</p></div>
+    <div><p class="foot-brand" style="font-size:1.25rem"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h18v2.6H3zM3 8.1h18v2.6H3zM3 13.2h18V21l-9-4.6L3 21z"/></svg> Get The Urban Edit</p><p class="foot-tag">What's next, what's loud, and what actually works off the runway and on the streets. Free, from Halie.</p></div>
     <form class="news-form" action="{{ site.substack }}/subscribe" method="get" target="_blank"><label class="sr" for="nl-email">Email</label><input id="nl-email" type="email" name="email" placeholder="you@example.com" required><button class="btn" type="submit">Subscribe</button></form>
   </div>
   <div class="wrap foot-small">

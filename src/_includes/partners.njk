@@ -1,0 +1,12 @@
+{% if partners.partners.length %}
+<section class="band paper">
+  <div class="wrap">
+    <div class="band-head"><h2>Partners</h2></div>
+    <div class="partners-row">
+    {%- for p in partners.partners %}
+      <a class="partner" href="{{ p.url or '#' }}">{% if p.logo %}<img src="{{ p.logo }}" alt="{{ p.name }}" loading="lazy">{% else %}<strong>{{ p.name }}</strong>{% endif %}<span>{{ p.detail }}{% if p.status == 'proposed' %}{% if site.setupMode %} · in conversation{% endif %}{% endif %}</span></a>
+    {%- endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

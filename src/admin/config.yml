@@ -14,7 +14,7 @@ collections:
         fields:
           - { name: notes, label: Notes, widget: list, fields: [ { name: slug, label: Slug }, { name: title, label: Title }, { name: kicker, label: Kicker }, { name: image, label: Image, widget: image }, { name: q, label: Question, required: false }, { name: asker, label: Asked by, required: false }, { name: body, label: Body, widget: text } ] }
       - name: packages
-        label: Packages and pricing
+        label: Pricing
         file: src/_data/packages.json
         fields:
           - { name: intro, label: Intro, widget: text }
@@ -39,3 +39,14 @@ collections:
           - { name: calendly, label: "Calendly link (paste to enable online booking)", required: false }
           - { name: url, label: Site URL }
           - { name: setupMode, label: Setup mode (noindex), widget: boolean }
+      - name: trusted
+        label: Trusted by
+        file: src/_data/trusted.json
+        fields:
+          - { name: line, label: Line }
+          - { name: items, label: Names (employers, teams, firms), widget: list, field: { name: item, label: Name } }
+      - name: partners
+        label: Partners and sponsors
+        file: src/_data/partners.json
+        fields:
+          - { name: partners, label: Partners, widget: list, fields: [ { name: name, label: Name }, { name: detail, label: Detail, required: false }, { name: url, label: URL, required: false }, { name: logo, label: Logo, widget: image, required: false }, { name: status, label: Status, widget: select, options: [confirmed, proposed], default: confirmed } ] }
