@@ -37,7 +37,7 @@ description: "Personal styling with a fresh approach. Halie blends vintage, high
   <div class="wrap">
     <div class="band-head"><h2>Lookbook</h2><a class="textlink" href="/lookbook/">See all →</a></div>
     <div class="strip">
-    {%- set picks = ["/images/houndstooth-valentino.jpg","/images/tosca.jpg","/images/downtown-vintage.jpg","/images/portfolio-throwback.jpg","/images/green-sweater-bag.jpg","/images/halie-sunglasses.jpg"] %}
+    {%- set picks = ["/images/green-sweater-close.jpg","/images/houndstooth-valentino.jpg","/images/tosca.jpg","/images/downtown-vintage.jpg","/images/portfolio-throwback.jpg","/images/halie-sunglasses.jpg"] %}
     {%- for l in looks %}{% if l.src in picks %}
       <a href="/lookbook/" title="{{ l.credit }}"><img src="{{ l.src }}" alt="{{ l.alt }}" width="{{ l.w }}" height="{{ l.h }}" loading="lazy"></a>
     {%- endif %}{% endfor %}
